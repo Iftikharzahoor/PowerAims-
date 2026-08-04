@@ -16,7 +16,7 @@ git push origin main
 
 echo.
 echo ==================================================
-echo ✔ Website updated successfully on GitHub & Vercel!
+echo Website updated successfully on GitHub and Vercel!
 echo ==================================================
 echo.
 pause
