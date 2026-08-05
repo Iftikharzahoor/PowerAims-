@@ -818,6 +818,11 @@
     color: var(--text-muted);
 }
 
+/* Hide default Astra page title to avoid duplication */
+.entry-header {
+    display: none !important;
+}
+
 /* ==================================================
    MOBILE & RESPONSIVENESS OVERRIDES
 ================================================== */
