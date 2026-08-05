@@ -818,4 +818,154 @@
     color: var(--text-muted);
 }
 
+/* ==================================================
+   MOBILE & RESPONSIVENESS OVERRIDES
+================================================== */
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    /* Base Typography & Sections */
+    .section-title {
+        font-size: 28px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .section-subtitle {
+        font-size: 11px !important;
+        letter-spacing: 1.5px !important;
+    }
+    
+    .subsection-title {
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+        padding-left: 10px !important;
+    }
+
+    /* Hero Section */
+    .poweraim-hero {
+        height: auto !important;
+        min-height: 500px !important;
+        padding: 100px 0 60px 0 !important;
+    }
+    
+    .poweraim-hero-content h1 {
+        font-size: 36px !important;
+        margin-bottom: 15px !important;
+        line-height: 1.2 !important;
+    }
+    
+    .poweraim-hero-content .subtitle {
+        font-size: 16px !important;
+        margin-bottom: 25px !important;
+        line-height: 1.5 !important;
+    }
+    
+    .hero-actions .poweraim-btn {
+        margin-bottom: 15px !important;
+        margin-right: 0 !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    /* Page Header */
+    .poweraim-page-header {
+        padding: 40px 0 !important;
+    }
+    
+    .poweraim-page-header h1 {
+        font-size: 28px !important;
+    }
+    
+    .poweraim-page-header p {
+        font-size: 14px !important;
+    }
+
+    /* Section Paddings */
+    .home-intro-section, 
+    .home-services-section, 
+    .about-page-legacy, 
+    .about-page-who, 
+    .about-page-board, 
+    .about-page-staff, 
+    .services-page-list, 
+    .specialty-groups-section, 
+    .projects-page-content, 
+    .reviews-page-content, 
+    .contact-page-wrapper {
+        padding: 50px 0 !important;
+    }
+
+    /* Stats Section */
+    .poweraim-stats-wrapper {
+        margin-top: -30px !important;
+        padding: 0 15px !important;
+    }
+    
+    .poweraim-stats {
+        padding: 25px !important;
+    }
+    
+    .stat-number {
+        font-size: 36px !important;
+    }
+
+    /* Boards & Key Staff Cards */
+    .board-member-profile {
+        padding: 25px !important;
+        text-align: center !important;
+    }
+    
+    .board-member-profile h3 {
+        font-size: 18px !important;
+    }
+    
+    .board-member-profile .role {
+        font-size: 12px !important;
+    }
+    
+    .board-member-profile .edu {
+        font-size: 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .staff-profile-card {
+        padding: 20px !important;
+    }
+    
+    /* Services Page Items */
+    .service-item-detail {
+        padding: 25px !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .service-item-detail h3 {
+        font-size: 18px !important;
+        max-width: 100% !important;
+    }
+    
+    .service-item-detail .num {
+        font-size: 30px !important;
+        top: 15px !important;
+        right: 25px !important;
+    }
+
+    /* Projects Page Items */
+    .project-detail-item {
+        padding: 20px !important;
+    }
+    
+    .project-detail-item h4 {
+        font-size: 16px !important;
+    }
+
+    /* Contact Details */
+    .contact-details-panel {
+        padding: 30px 20px !important;
+    }
+}
+
 
