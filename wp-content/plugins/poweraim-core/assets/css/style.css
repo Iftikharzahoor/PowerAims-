@@ -973,4 +973,39 @@ html, body {
     }
 }
 
+/* Project Details Gallery */
+.project-gallery-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-gallery-image {
+    flex: 1;
+    max-width: 350px;
+}
+
+.project-gallery-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-gallery-image img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 500px) {
+    .project-gallery-row {
+        gap: 10px;
+    }
+    .project-gallery-image img {
+        height: 120px;
+    }
+}
+
 
