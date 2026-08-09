@@ -4,7 +4,7 @@ echo       Power-Aim Website Update Tool
 echo ==================================================
 echo.
 echo 1. Running Crawler to fetch latest localhost changes...
-python "C:\Users\SunIT\Local Sites\poweraims\app\public\crawler.py"
+python "..\crawler.py"
 
 echo.
 echo 2. Adding changes to Git...
