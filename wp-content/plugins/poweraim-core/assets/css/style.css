@@ -19,9 +19,9 @@
 /* General Layout Utilities */
 .poweraim-container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
 }
 
 .poweraim-grid {
@@ -685,6 +685,8 @@
     padding: 85px 0;
     background: var(--primary-dark);
     color: #fff;
+    margin-top: 50px !important; /* Spacing between stats bar and specialty groups */
+    overflow: hidden;
 }
 
 .specialty-groups-section h2 {
@@ -695,12 +697,33 @@
     color: var(--text-muted);
 }
 
+.specialty-grid-wrapper {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+}
+
 .specialty-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-    margin-top: 30px;
+    gap: 15px;
+    width: max-content;
+    animation: specialtyMarquee 40s linear infinite;
+    white-space: nowrap;
+}
+
+.specialty-grid:hover {
+    animation-play-state: paused;
+}
+
+@keyframes specialtyMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .spec-tag {
