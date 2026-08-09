@@ -152,13 +152,32 @@
     overflow: hidden;
 }
 
+/* Custom Header & Logo Sizing Overrides */
+.custom-logo {
+    max-height: 90px !important;
+    width: auto !important;
+}
+
+.ast-primary-header-bar {
+    padding: 22px 0 !important;
+}
+
+@media (max-width: 768px) {
+    .custom-logo {
+        max-height: 60px !important;
+    }
+    .ast-primary-header-bar {
+        padding: 10px 0 !important;
+    }
+}
+
 .poweraim-hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(14, 43, 91, 0.9) 0%, rgba(10, 15, 30, 0.95) 100%) !important;
     z-index: 1;
 }
 
@@ -178,9 +197,9 @@
 }
 
 .poweraim-hero-content h1 .highlight {
-    background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-orange) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: #3b82f6 !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: #3b82f6 !important;
 }
 
 .poweraim-hero-content .subtitle {
@@ -189,6 +208,35 @@
     color: #e2e8f0 !important;
     max-width: 650px;
     margin-bottom: 40px;
+}
+
+.poweraim-hero-content .poweraim-badge {
+    background: rgba(59, 130, 246, 0.15) !important;
+    color: #3b82f6 !important;
+    border: 1px solid rgba(59, 130, 246, 0.4) !important;
+}
+
+.poweraim-hero-content .btn-primary {
+    background: #3b82f6 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4) !important;
+}
+
+.poweraim-hero-content .btn-primary:hover {
+    background: #2563eb !important;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6) !important;
+}
+
+.poweraim-hero-content .btn-secondary {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: #3b82f6 !important;
+    border: 1px solid rgba(59, 130, 246, 0.4) !important;
+    backdrop-filter: blur(10px);
+}
+
+.poweraim-hero-content .btn-secondary:hover {
+    background: #3b82f6 !important;
+    color: #fff !important;
 }
 
 .hero-actions .poweraim-btn {
