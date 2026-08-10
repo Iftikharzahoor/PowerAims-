@@ -17,13 +17,13 @@
 }
 
 /* --- Boxed Website Layout with Light Blue Watercolor Background --- */
-html {
+body {
     background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 25%, #e0f2fe 50%, #bae6fd 75%, #bae6fd 100%) !important;
     background-attachment: fixed !important;
     min-height: 100vh;
 }
 
-body {
+#page {
     max-width: 1250px !important;
     margin: 0 auto !important;
     box-shadow: 0 0 50px rgba(15, 23, 42, 0.15) !important;
@@ -510,50 +510,50 @@ body {
 }
 
 .board-member-profile {
-    background: #f0f9ff !important; /* Soft light blue background */
-    color: #1e293b !important; /* Dark text */
+    background: #2b82c9 !important; /* Brand blue background */
+    color: #ffffff !important; /* White text */
     padding: 40px;
     border-radius: 12px;
     border-top: none !important; /* Remove yellow line */
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(43, 130, 201, 0.15) !important;
     transition: all 0.3s ease;
 }
 
 .board-member-profile:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(43, 130, 201, 0.15) !important;
+    box-shadow: 0 15px 40px rgba(43, 130, 201, 0.3) !important;
 }
 
 .board-member-profile.mini {
-    background: #f0f9ff !important;
-    color: #1e293b !important;
+    background: #2b82c9 !important;
+    color: #ffffff !important;
     border-top: none !important;
-    border: 1px solid rgba(43, 130, 201, 0.15) !important;
+    border: none !important;
     box-shadow: none;
 }
 
 .board-member-profile.mini h3 {
-    color: var(--primary-dark);
+    color: #ffffff !important;
 }
 
 .board-member-profile.mini .role {
-    color: #2b82c9 !important;
+    color: #bae6fd !important;
 }
 
 .board-member-profile.mini .desc {
-    color: var(--text-dark);
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .board-member-profile h3 {
     font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 700;
-    color: #0f172a !important; /* Dark heading */
+    color: #ffffff !important; /* White heading */
     margin-bottom: 5px;
 }
 
 .board-member-profile .role {
-    color: #2b82c9 !important; /* Change yellow text to brand light blue */
+    color: #bae6fd !important; /* Change yellow text to brand light blue */
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -563,22 +563,22 @@ body {
 
 .board-member-profile .edu {
     font-size: 13px;
-    color: #475569 !important; /* Muted slate color instead of yellow */
+    color: rgba(255, 255, 255, 0.8) !important; /* Muted slate color instead of yellow */
     line-height: 1.5;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgba(43, 130, 201, 0.15) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
     padding-bottom: 12px;
 }
 
 .board-member-profile.mini .edu {
-    border-bottom-color: rgba(43, 130, 201, 0.15) !important;
-    color: #475569 !important;
+    border-bottom-color: rgba(255, 255, 255, 0.2) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .board-member-profile .desc {
     font-size: 14px;
     line-height: 1.6;
-    color: #334155 !important;
+    color: rgba(255, 255, 255, 0.95) !important;
 }
     color: var(--text-light);
     margin: 0;
