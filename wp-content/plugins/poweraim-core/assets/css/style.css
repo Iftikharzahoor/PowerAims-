@@ -303,10 +303,10 @@ body {
 }
 
 .poweraim-stats {
-    background: #2b82c9 !important; /* Brand light blue background */
+    background: var(--primary-dark);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(43, 130, 201, 0.25) !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .stat-card {
