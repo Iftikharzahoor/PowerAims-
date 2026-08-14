@@ -1170,4 +1170,32 @@ footer.site-footer {
     }
 }
 
+/* 6. Attractive Blue & White Mixture Header/Navbar */
+.site-header, 
+.main-header-bar, 
+.ast-primary-header-bar, 
+#masthead {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 249, 255, 0.98) 50%, rgba(224, 242, 254, 0.98) 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 3px solid rgba(43, 130, 201, 0.4) !important;
+    box-shadow: 0 4px 25px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Nav Menu Item Hover Transitions */
+.main-header-menu a, 
+.ast-menu-toggle,
+.main-navigation a,
+#ast-desktop-header a {
+    color: #0f2c59 !important; /* Premium corporate deep navy blue */
+    font-weight: 700 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.main-header-menu a:hover, 
+.main-navigation a:hover,
+#ast-desktop-header a:hover {
+    color: #2b82c9 !important; /* Brand light blue on hover */
+    transform: translateY(-1px);
+}
+
 
