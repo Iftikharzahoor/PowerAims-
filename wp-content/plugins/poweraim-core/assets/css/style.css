@@ -16,10 +16,10 @@
     --font-body: 'Inter', sans-serif;
 }
 
-/* --- Boxed Website Layout with Light Blue Watercolor Background --- */
+/* --- Boxed Website Layout with Custom Brand Background Image --- */
 body {
-    background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 25%, #e0f2fe 50%, #bae6fd 75%, #bae6fd 100%) !important;
-    background-attachment: fixed !important;
+    background: url('../images/site-bg.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
     min-height: 100vh;
 }
 
