@@ -1216,7 +1216,7 @@ footer.site-footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(15, 32, 67, 0.85) 0%, rgba(10, 15, 30, 0.9) 100%) !important;
+    background: rgba(0, 0, 0, 0.35) !important; /* Soft dark overlay to keep text readable without blue card tint */
     z-index: 1;
 }
 
