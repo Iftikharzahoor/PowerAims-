@@ -775,7 +775,57 @@ body {
 /* --- PROJECTS PAGE STYLES --- */
 .projects-page-content {
     padding: 90px 0;
-    background: #fff;
+    background: #ecf5fc; /* Soft corporate light blue */
+}
+
+/* Sticky Category Navbar for Projects */
+.projects-category-nav-wrapper {
+    position: sticky;
+    top: 90px; /* Adjust based on sticky header */
+    background: #ffffff;
+    border-bottom: 2px solid rgba(43, 130, 201, 0.15);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+    z-index: 99;
+    padding: 15px 0;
+}
+
+@media (max-width: 991px) {
+    .projects-category-nav-wrapper {
+        top: 70px;
+    }
+}
+
+.projects-category-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.cat-nav-link {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 700;
+    color: #475569 !important;
+    text-decoration: none !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cat-nav-link:hover {
+    color: #2b82c9 !important;
+    background: rgba(43, 130, 201, 0.05);
+}
+
+.cat-nav-link.active {
+    color: #ffffff !important;
+    background: #2b82c9 !important;
+    box-shadow: 0 4px 10px rgba(43, 130, 201, 0.25);
 }
 
 .project-category-block {
@@ -811,11 +861,17 @@ body {
 }
 
 .project-detail-item {
-    background: #f8fafc;
+    background: #ffffff; /* Clean white card on light blue background */
     border: 1px solid var(--border-color);
     padding: 30px;
     border-radius: 8px;
-    border-left: 4px solid var(--accent-gold);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-detail-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
 }
 
 .project-detail-item h4 {
@@ -1244,9 +1300,8 @@ footer.site-footer {
 /* 8. Larger Project Gallery Images & Hover Overlay Text */
 .project-gallery-row {
     display: flex;
-    gap: 20px;
+    justify-content: flex-start; /* Left align but keep clean */
     margin-top: 25px;
-    flex-wrap: wrap;
 }
 
 .project-gallery-image {
@@ -1254,22 +1309,15 @@ footer.site-footer {
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
-    flex: 1 1 calc(50% - 10px); /* Responsive 2-column layout */
-    max-width: 480px !important; /* Increased size as requested! */
+    width: 100%;
+    max-width: 650px !important; /* Larger max width */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
-@media (max-width: 600px) {
-    .project-gallery-image {
-        flex: 1 1 100%;
-        max-width: 100% !important;
-    }
-}
-
 .project-gallery-image img {
     width: 100% !important;
-    height: 250px !important; /* Increased height as requested! */
+    height: 380px !important; /* Taller image */
     object-fit: cover !important;
     display: block;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
