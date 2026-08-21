@@ -5,8 +5,8 @@
 :root {
     --primary-dark: #0f172a;
     --secondary-dark: #1e293b;
-    --accent-gold: #f59e0b;
-    --accent-orange: #d97706;
+    --accent-gold: #0284c7;
+    --accent-orange: #0369a1;
     --accent-blue: #2563eb;
     --text-dark: #334155;
     --text-light: #f8fafc;
@@ -39,34 +39,28 @@ body {
     right: 0 !important;
 }
 
-/* General Layout Utilities */
-.poweraim-container {
+/* Base resets & utilities */
+.container {
     width: 100%;
-    max-width: 1100px !important;
-    margin: 0 auto !important;
-    padding: 0 20px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.poweraim-grid {
-    display: grid;
-    gap: 30px;
-}
-
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-4 { grid-template-columns: repeat(4, 1fr); }
-
-@media (max-width: 991px) {
-    .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
-    .grid-2 { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 600px) {
-    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+.section-padding {
+    padding: 80px 0;
 }
 
 .text-center { text-align: center; }
-.margin-bottom-lg { margin-bottom: 40px; }
+.text-white { color: #fff !important; }
+.text-accent { color: var(--accent-blue); }
+.text-muted { color: var(--text-muted); }
+.bg-light { background-color: #f8fafc; }
+.bg-dark { background-color: var(--primary-dark); }
+.bg-secondary { background-color: var(--secondary-dark); }
+.margin-bottom-sm { margin-bottom: 15px; }
+.margin-bottom-md { margin-bottom: 30px; }
+.margin-bottom-lg { margin-bottom: 45px; }
 .margin-bottom-xl { margin-bottom: 60px; }
 .margin-top-lg { margin-top: 40px; }
 .font-bold { font-weight: 700; }
@@ -74,8 +68,8 @@ body {
 
 /* Buttons & Badges */
 .poweraim-badge {
-    background: rgba(245, 158, 11, 0.15);
-    color: var(--accent-gold);
+    background: rgba(2, 132, 199, 0.12);
+    color: #0284c7;
     padding: 6px 16px;
     border-radius: 50px;
     font-size: 12px;
@@ -83,7 +77,7 @@ body {
     letter-spacing: 1.5px;
     display: inline-block;
     margin-bottom: 20px;
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    border: 1px solid rgba(2, 132, 199, 0.25);
 }
 
 .poweraim-btn {
@@ -100,14 +94,14 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+    background: linear-gradient(135deg, #0284c7, #0369a1);
     color: #fff !important;
-    box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(217, 119, 6, 0.6);
+    box-shadow: 0 8px 25px rgba(2, 132, 199, 0.6);
 }
 
 .btn-secondary {
@@ -281,7 +275,7 @@ body {
 .shape-1 {
     width: 300px;
     height: 300px;
-    background: rgba(245, 158, 11, 0.15);
+    background: rgba(2, 132, 199, 0.15);
     bottom: -50px;
     left: -50px;
 }
