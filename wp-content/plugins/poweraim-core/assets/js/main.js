@@ -74,4 +74,61 @@ jQuery(document).ready(function($) {
         }, 1500);
     });
 
+    // 5. Language Switcher Dropdown & Filtering
+    var $langSwitcher = $('#poweraimLangSwitcher');
+    var $langDropdownBtn = $('#langDropdownBtn');
+    var $langDropdownMenu = $('#langDropdownMenu');
+    var $langSearchInput = $('#langSearchInput');
+
+    $langDropdownBtn.on('click', function(e) {
+        e.stopPropagation();
+        $langSwitcher.toggleClass('open');
+        if ($langSwitcher.hasClass('open')) {
+            $langSearchInput.val('').trigger('input').focus();
+        }
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#poweraimLangSwitcher').length) {
+            $langSwitcher.removeClass('open');
+        }
+    });
+
+    // Language Search Filter
+    $langSearchInput.on('input', function() {
+        var query = $(this).val().toLowerCase();
+        $('.lang-grid-list .lang-item').each(function() {
+            var text = $(this).find('.lang-name').text().toLowerCase();
+            var code = $(this).find('.lang-code').text().toLowerCase();
+            if (text.indexOf(query) !== -1 || code.indexOf(query) !== -1) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    });
+
+    // Language Selection Click
+    $(document).on('click', '.lang-item', function() {
+        var lang = $(this).data('lang');
+        var langCode = $(this).find('.lang-code').text();
+        
+        $('.lang-item').removeClass('active');
+        $(this).addClass('active');
+        $('.current-lang-code').text(langCode);
+        $langSwitcher.removeClass('open');
+
+        // Trigger Google Translate
+        var select = document.querySelector('.goog-te-combo');
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+        }
+    });
+
+    // 6. Mobile Navbar Toggle
+    $('#poweraimMobileToggle').on('click', function() {
+        $('.poweraim-nav-menu').toggleClass('open');
+    });
+
 });
