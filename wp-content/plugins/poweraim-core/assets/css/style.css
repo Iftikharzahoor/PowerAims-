@@ -1384,9 +1384,9 @@ footer.site-footer {
    ========================================================================== */
 
 #masthead.site-header {
-    background: #ffffff !important;
+    background: url('../images/navbar_bg_banner.jpg') no-repeat center center / cover !important;
     border-bottom: 1px solid #e2e8f0 !important;
-    box-shadow: 0 2px 15px rgba(15, 23, 42, 0.05) !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
     position: sticky !important;
     top: 0 !important;
     z-index: 9999 !important;
@@ -1400,7 +1400,7 @@ footer.site-footer {
 
 .poweraim-header-navbar {
     width: 100% !important;
-    background: #ffffff !important;
+    background: transparent !important;
     padding: 14px 0 !important;
 }
 
