@@ -1334,7 +1334,7 @@ footer.site-footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(43, 130, 201, 0.9) !important; /* Brand blue background overlay */
+    background: transparent !important; /* Removed blue background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1344,6 +1344,7 @@ footer.site-footer {
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(10px);
     z-index: 2;
+    pointer-events: none;
 }
 
 .project-gallery-image:hover .project-gallery-hover {
@@ -1353,12 +1354,13 @@ footer.site-footer {
 
 .project-gallery-hover span {
     color: #ffffff !important;
-    font-weight: 700 !important;
-    font-size: 15px !important;
+    font-weight: 800 !important;
+    font-size: 16px !important;
     line-height: 1.5 !important;
     font-family: var(--font-heading);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 4px 12px rgba(0, 0, 0, 0.95), 0 0 20px rgba(0, 0, 0, 0.9) !important;
 }
 
 
