@@ -183,4 +183,19 @@ jQuery(document).ready(function($) {
         $('.poweraim-nav-menu').toggleClass('open');
     });
 
+    // 7. Projects Page Category "Learn More" Expand Toggle
+    $(document).on('click', '.btn-category-toggle', function(e) {
+        e.preventDefault();
+        var $block = $(this).closest('.project-category-block');
+        $block.toggleClass('is-expanded');
+        
+        if ($block.hasClass('is-expanded')) {
+            $(this).find('.toggle-text').text('Show Less');
+            $(this).attr('aria-expanded', 'true');
+        } else {
+            $(this).find('.toggle-text').text('Learn More');
+            $(this).attr('aria-expanded', 'false');
+        }
+    });
+
 });

@@ -1746,5 +1746,210 @@ body {
     display: none !important;
 }
 
+/* ==========================================================================
+   NAVBAR PROJECTS HOVER SUBMENU
+   ========================================================================== */
+
+.nav-item-has-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-item-has-dropdown .nav-arrow {
+    font-size: 11px;
+    margin-left: 6px;
+    transition: transform 0.25s ease;
+    color: #64748b;
+}
+
+.nav-item-has-dropdown:hover .nav-arrow {
+    transform: rotate(180deg);
+    color: #0284c7;
+}
+
+.poweraim-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16), 0 2px 8px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e2e8f0;
+    padding: 8px 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.nav-item-has-dropdown:hover .poweraim-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.poweraim-submenu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.poweraim-submenu li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 18px;
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155 !important;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.poweraim-submenu li a i {
+    font-size: 14px;
+    color: #0284c7;
+    width: 18px;
+    text-align: center;
+}
+
+.poweraim-submenu li a:hover {
+    background: #e0f2fe;
+    color: #0284c7 !important;
+    padding-left: 22px;
+}
+
+/* ==========================================================================
+   PROJECTS PAGE: MAIN FEATURED & EXPANDABLE ACCORDIONS
+   ========================================================================== */
+
+.category-header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+}
+
+.category-header-wrap .category-title {
+    margin: 0 !important;
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.category-count-badge {
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 50px;
+    border: 1px solid rgba(2, 132, 199, 0.2);
+}
+
+.project-main-featured {
+    margin-bottom: 20px;
+}
+
+.main-featured-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 8px 8px 0 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.featured-card {
+    border: 2px solid #0284c7 !important;
+    border-radius: 0 12px 12px 12px !important;
+    background: #ffffff !important;
+    box-shadow: 0 8px 30px rgba(2, 132, 199, 0.08) !important;
+}
+
+.category-more-projects {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
+}
+
+.project-category-block.is-expanded .category-more-projects {
+    max-height: 5000px;
+    opacity: 1;
+    margin-top: 24px;
+}
+
+.category-expand-action {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px dashed #cbd5e1;
+}
+
+.btn-category-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    color: #0284c7;
+    border: 2px solid #0284c7;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 10px rgba(2, 132, 199, 0.1);
+    outline: none;
+}
+
+.btn-category-toggle:hover {
+    background: #0284c7;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.25);
+}
+
+.btn-category-toggle .toggle-icon {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.project-category-block.is-expanded .btn-category-toggle {
+    background: #f1f5f9;
+    color: #475569;
+    border-color: #cbd5e1;
+}
+
+.project-category-block.is-expanded .btn-category-toggle:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.project-category-block.is-expanded .btn-category-toggle .toggle-icon {
+    transform: rotate(180deg);
+}
+
+
 
 
