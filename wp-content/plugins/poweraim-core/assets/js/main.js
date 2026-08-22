@@ -198,38 +198,4 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // 8. Subproject "Learn More" Modal Open Handler
-    $(document).on('click', '.btn-subproject-details', function(e) {
-        e.preventDefault();
-        var title = $(this).data('title');
-        var client = $(this).data('client');
-        var category = $(this).data('category') || 'ENGINEERING PROJECT';
-        var scope = $(this).data('scope');
-        var img = $(this).data('img');
-
-        $('#modalProjectTitle').text(title);
-        $('#modalProjectClient').text(client);
-        $('#modalProjectCategory').text(category);
-        $('#modalProjectScope').text(scope);
-        $('#modalProjectImg').attr('src', img);
-
-        $('#projectDetailsModal').addClass('open');
-        $('body').css('overflow', 'hidden');
-    });
-
-    // Modal Close Handlers
-    $(document).on('click', '#modalCloseBtn, #projectDetailsModal', function(e) {
-        if (e.target === this) {
-            $('#projectDetailsModal').removeClass('open');
-            $('body').css('overflow', 'auto');
-        }
-    });
-
-    $(document).on('keydown', function(e) {
-        if (e.key === 'Escape' && $('#projectDetailsModal').hasClass('open')) {
-            $('#projectDetailsModal').removeClass('open');
-            $('body').css('overflow', 'auto');
-        }
-    });
-
 });

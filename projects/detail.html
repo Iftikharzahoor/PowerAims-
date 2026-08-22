@@ -11,6 +11,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="../wp-includes/js/jquery/jquery.min.js"></script>
+    <style>
+        .project-detail-two-col {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 40px;
+            align-items: start;
+        }
+        @media (max-width: 991px) {
+            .project-detail-two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+        .project-right-sidebar {
+            position: sticky;
+            top: 90px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .project-right-image-box {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        .project-right-image-box img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .project-right-image-box:hover img {
+            transform: scale(1.03);
+        }
+        .project-image-caption {
+            padding: 12px 18px;
+            background: #0f172a;
+            color: #e2e8f0;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .project-image-caption i {
+            color: #38bdf8;
+        }
+    </style>
 </head>
 <body class="page-template-default page poweraim-custom-body">
 
@@ -116,7 +166,7 @@
                 <div class="hero-meta-item">
                     <i class="fa-solid fa-building-columns"></i>
                     <div>
-                        <span style="font-size: 11px; opacity: 0.8; display: block;">CLIENT / PARTNER</span>
+                        <span style="font-size: 11px; opacity: 0.8; display: block;">CLIENT / AGENCY</span>
                         <strong id="heroClientName">Water & Power Development Authority (WAPDA)</strong>
                     </div>
                 </div>
@@ -130,7 +180,7 @@
                 <div class="hero-meta-item">
                     <i class="fa-solid fa-circle-check"></i>
                     <div>
-                        <span style="font-size: 11px; opacity: 0.8; display: block;">STATUS</span>
+                        <span style="font-size: 11px; opacity: 0.8; display: block;">PROJECT STATUS</span>
                         <strong id="heroStatus">Completed Successfully</strong>
                     </div>
                 </div>
@@ -138,21 +188,17 @@
         </div>
     </div>
 
-    <!-- Main Project Content & Sidebar -->
+    <!-- Main Project Content Section: LEFT DETAILS, RIGHT IMAGE & SPECS -->
     <section class="project-detail-main-section">
         <div class="poweraim-container">
-            <div class="project-detail-grid-layout">
+            <div class="project-detail-two-col">
                 
-                <!-- Left Column: Scope & Visuals -->
-                <div class="project-detail-left-content">
+                <!-- LEFT COLUMN: COMPLETE DETAILS & SCOPE -->
+                <div class="project-left-details">
                     
-                    <div class="project-main-image-container">
-                        <img id="projectMainImage" src="../wp-content/plugins/poweraim-core/assets/images/khanpur_dam_1.jpg" alt="Project Showcase Image">
-                    </div>
-
-                    <!-- Scope of Services Card -->
+                    <!-- Overview & Scope Card -->
                     <div class="project-detail-card">
-                        <h3><i class="fa-solid fa-file-signature"></i> Detailed Scope of Services</h3>
+                        <h3><i class="fa-solid fa-file-signature"></i> Detailed Scope of Services & Deliverables</h3>
                         <p id="projectScopeText">
                             The scope of periodic inspection included a comprehensive review and on-site assessment of the dam structure, foundations, abutments, and reservoir rim to evaluate stability, seepage, settlement, erosion, and other signs of distress. It also covered inspection of spillways, outlet works, gates, valves, energy dissipation arrangements, and associated mechanical and electrical systems to verify operational reliability.
                         </p>
@@ -163,7 +209,7 @@
 
                     <!-- Key Technical Highlights Card -->
                     <div class="project-detail-card">
-                        <h3><i class="fa-solid fa-microchip"></i> Key Engineering Highlights & Deliverables</h3>
+                        <h3><i class="fa-solid fa-microchip"></i> Key Engineering Highlights</h3>
                         <ul class="project-highlights-list" id="projectHighlightsContainer">
                             <li><i class="fa-solid fa-check-circle"></i> Dam Safety Surveillance & Risk Evaluation</li>
                             <li><i class="fa-solid fa-check-circle"></i> Spillway & Hydro-Mechanical Gates Inspection</li>
@@ -172,52 +218,67 @@
                         </ul>
                     </div>
 
+                    <!-- Engineering Methodology Card -->
+                    <div class="project-detail-card">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Standards & Quality Compliance</h3>
+                        <p>
+                            All consultancy, feasibility studies, detailed engineering designs, and construction management were executed strictly adhering to <strong>Pakistan Engineering Council (PEC)</strong>, <strong>PPRA Rules</strong>, <strong>FIDIC Contract Conditions</strong>, and international quality standards.
+                        </p>
+                    </div>
+
                 </div>
 
-                <!-- Right Sidebar: Info Widget & CTAs -->
-                <div class="project-detail-sidebar">
-                    <div class="project-sidebar-sticky">
+                <!-- RIGHT COLUMN: PROJECT IMAGE & SPECIFICATIONS -->
+                <div class="project-right-sidebar">
+                    
+                    <!-- Right Side Project Image Box -->
+                    <div class="project-right-image-box">
+                        <img id="projectMainImage" src="../wp-content/plugins/poweraim-core/assets/images/khanpur_dam_1.jpg" alt="Project Showcase Image">
+                        <div class="project-image-caption">
+                            <i class="fa-solid fa-camera"></i> <span id="projectImageCaptionText">Project Site Showcase</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Specifications Card -->
+                    <div class="project-info-widget">
+                        <h4><i class="fa-solid fa-circle-info"></i> Project Specifications</h4>
                         
-                        <div class="project-info-widget">
-                            <h4><i class="fa-solid fa-circle-info"></i> Project Specifications</h4>
-                            
-                            <div class="widget-info-row">
-                                <div class="widget-info-label">Sector / Category</div>
-                                <div class="widget-info-value" id="widgetCategory">Dams & Hydropower</div>
-                            </div>
-
-                            <div class="widget-info-row">
-                                <div class="widget-info-label">Client / Agency</div>
-                                <div class="widget-info-value" id="widgetClient">Water & Power Development Authority (WAPDA)</div>
-                            </div>
-
-                            <div class="widget-info-row">
-                                <div class="widget-info-label">Location / Region</div>
-                                <div class="widget-info-value" id="widgetLocation">Pakistan</div>
-                            </div>
-
-                            <div class="widget-info-row">
-                                <div class="widget-info-label">Services Provided</div>
-                                <div class="widget-info-value">Feasibility, Design Review & Safety Inspection</div>
-                            </div>
-
-                            <div style="margin-top: 24px;">
-                                <a href="index.html#cat-dams" id="btnBackToCategory" class="btn-back-projects">
-                                    <i class="fa-solid fa-arrow-left"></i> Back to Projects
-                                </a>
-                            </div>
+                        <div class="widget-info-row">
+                            <div class="widget-info-label">Sector / Category</div>
+                            <div class="widget-info-value" id="widgetCategory">Dams & Hydropower</div>
                         </div>
 
-                        <!-- CTA Card -->
-                        <div class="cta-contact-widget">
-                            <h4>Need Similar Engineering Solutions?</h4>
-                            <p>Our multidisciplinary team delivers world-class consulting, detailed design, and project supervision.</p>
-                            <a href="../contact/index.html" class="btn-widget-contact">
-                                Request Consultation <i class="fa-solid fa-arrow-right"></i>
+                        <div class="widget-info-row">
+                            <div class="widget-info-label">Client / Agency</div>
+                            <div class="widget-info-value" id="widgetClient">Water & Power Development Authority (WAPDA)</div>
+                        </div>
+
+                        <div class="widget-info-row">
+                            <div class="widget-info-label">Location / Region</div>
+                            <div class="widget-info-value" id="widgetLocation">Pakistan</div>
+                        </div>
+
+                        <div class="widget-info-row">
+                            <div class="widget-info-label">Services Provided</div>
+                            <div class="widget-info-value">Feasibility, Design Review & Safety Inspection</div>
+                        </div>
+
+                        <div style="margin-top: 24px;">
+                            <a href="index.html#cat-dams" id="btnBackToCategory" class="btn-back-projects">
+                                <i class="fa-solid fa-arrow-left"></i> Back to Projects
                             </a>
                         </div>
-
                     </div>
+
+                    <!-- CTA Card -->
+                    <div class="cta-contact-widget">
+                        <h4>Need Similar Engineering Solutions?</h4>
+                        <p>Our multidisciplinary team delivers world-class consulting, detailed design, and project supervision.</p>
+                        <a href="../contact/index.html" class="btn-widget-contact">
+                            Request Consultation <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
                 </div>
 
             </div>
@@ -738,6 +799,7 @@
 
         document.getElementById('projectMainImage').src = proj.img;
         document.getElementById('projectMainImage').alt = proj.title;
+        document.getElementById('projectImageCaptionText').innerText = proj.title;
         document.getElementById('projectScopeText').innerText = proj.scope;
 
         document.getElementById('widgetCategory').innerText = proj.category;
