@@ -546,16 +546,32 @@ body {
     justify-content: center;
 }
 
-.board-member-photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top center;
-    border: 4px solid #ffffff;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-    background: #ffffff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.board-member-photo-wrap {
+    margin-bottom: 24px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.board-member-photo, img.board-member-photo {
+    width: 140px !important;
+    min-width: 140px !important;
+    max-width: 140px !important;
+    height: 140px !important;
+    min-height: 140px !important;
+    max-height: 140px !important;
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+    border: 4px solid #ffffff !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
+    background: #ffffff !important;
+    display: block !important;
+    margin: 0 auto !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .board-member-profile:hover .board-member-photo {
