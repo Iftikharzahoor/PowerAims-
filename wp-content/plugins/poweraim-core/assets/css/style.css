@@ -1384,12 +1384,14 @@ footer.site-footer {
    ========================================================================== */
 
 #masthead.site-header {
-    background: url('../images/navbar_bg_banner.jpg') no-repeat center center / cover !important;
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 35%, #ffffff 75%, #f8fafc 100%) !important;
     border-bottom: 1px solid #e2e8f0 !important;
-    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
     position: sticky !important;
     top: 0 !important;
     z-index: 9999 !important;
+    width: 100% !important;
+    margin: 0 !important;
     padding: 0 !important;
 }
 
@@ -1402,13 +1404,14 @@ footer.site-footer {
     width: 100% !important;
     background: transparent !important;
     padding: 14px 0 !important;
+    margin: 0 !important;
 }
 
 .poweraim-nav-container {
     max-width: 1360px !important;
     width: 100% !important;
     margin: 0 auto !important;
-    padding: 0 40px !important;
+    padding: 0 30px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
