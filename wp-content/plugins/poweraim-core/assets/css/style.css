@@ -540,6 +540,43 @@ body {
     box-shadow: 0 15px 40px rgba(43, 130, 201, 0.3) !important;
 }
 
+.board-member-photo-wrap {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.board-member-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.board-member-profile:hover .board-member-photo {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.board-member-placeholder {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
 .board-member-profile.mini {
     background: #2b82c9 !important;
     color: #ffffff !important;
