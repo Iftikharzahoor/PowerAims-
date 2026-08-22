@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="pageTitle">Project Details - POWER AIM Engineering Services</title>
+    <link rel="stylesheet" href="../wp-content/themes/astra/assets/css/minified/main.min.css">
+    <link rel="stylesheet" href="../wp-content/plugins/poweraim-core/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="../wp-includes/js/jquery/jquery.min.js"></script>
+</head>
+<body class="page-template-default page poweraim-custom-body">
+
+    <!-- Top Info Bar -->
+    <div class="poweraim-topbar">
+        <div class="poweraim-container poweraim-topbar-inner">
+            <div class="poweraim-topbar-left">
+                <span class="poweraim-topbar-item"><i class="fa-solid fa-location-dot"></i> 2nd Floor, Plaza 114, Spring North Commercial, Bahria Town Phase 7, Rawalpindi, Pakistan</span>
+            </div>
+            <div class="poweraim-topbar-right">
+                <a href="mailto:info@poweraim.com.pk" class="poweraim-topbar-item"><i class="fa-solid fa-envelope"></i> info@poweraim.com.pk</a>
+                <span class="poweraim-topbar-divider">|</span>
+                <a href="tel:+923335123456" class="poweraim-topbar-item"><i class="fa-solid fa-phone"></i> +92 51 5172035</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="poweraim-main-header">
+        <div class="poweraim-container poweraim-header-inner">
+            <div class="poweraim-logo">
+                <a href="../index.html" class="poweraim-logo-link">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/poweraim_official_logo.png" alt="POWER AIM Engineering Services" class="poweraim-logo-img">
+                    <div class="poweraim-logo-text">
+                        <span class="poweraim-logo-title">POWER AIM</span>
+                        <span class="poweraim-logo-sub">Engineering Services</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="poweraim-nav-menu">
+                <ul class="poweraim-nav-links">
+                    <li><a href="../index.html" class="nav-item">Home</a></li>
+                    <li><a href="../about/index.html" class="nav-item">About</a></li>
+                    <li><a href="../services/index.html" class="nav-item">Services</a></li>
+                    <li class="nav-item-has-dropdown">
+                        <a href="index.html" class="nav-item active">Projects <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <ul class="poweraim-submenu">
+                            <li><a href="index.html#cat-dams"><i class="fa-solid fa-water-ladder"></i> Dams</a></li>
+                            <li><a href="index.html#cat-canals"><i class="fa-solid fa-water"></i> Canals</a></li>
+                            <li><a href="index.html#cat-renewable"><i class="fa-solid fa-solar-panel"></i> Renewable Energy</a></li>
+                            <li><a href="index.html#cat-electrical"><i class="fa-solid fa-bolt"></i> Electrical Projects</a></li>
+                            <li><a href="index.html#cat-roads"><i class="fa-solid fa-road"></i> Roads & Highways</a></li>
+                            <li><a href="index.html#cat-buildings"><i class="fa-solid fa-building"></i> Building Projects</a></li>
+                            <li><a href="index.html#cat-gis"><i class="fa-solid fa-map-location-dot"></i> GIS & Geohazards</a></li>
+                            <li><a href="index.html#cat-sub"><i class="fa-solid fa-users-gear"></i> Sub-Consultant</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact/index.html" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="poweraim-nav-actions">
+                <div class="poweraim-lang-switcher" id="poweraimLangSwitcher">
+                    <button class="poweraim-lang-btn" id="langDropdownBtn" aria-label="Select Language" type="button">
+                        <i class="fa-solid fa-globe"></i>
+                        <span class="current-lang-code">EN</span>
+                        <i class="fa-solid fa-chevron-down chevron-icon"></i>
+                    </button>
+                    <div class="poweraim-lang-dropdown" id="langDropdownMenu">
+                        <div class="lang-search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="langSearchInput" placeholder="Search languages..." autocomplete="off">
+                        </div>
+                        <div class="lang-grid-list" id="langGridList">
+                            <button type="button" class="lang-item active" data-lang="en"><span class="lang-name">English</span><span class="lang-code">EN</span></button>
+                            <button type="button" class="lang-item" data-lang="ur"><span class="lang-name">Urdu</span><span class="lang-code">UR</span></button>
+                            <button type="button" class="lang-item" data-lang="ar"><span class="lang-name">Arabic</span><span class="lang-code">AR</span></button>
+                            <button type="button" class="lang-item" data-lang="zh-CN"><span class="lang-name">Chinese</span><span class="lang-code">ZH</span></button>
+                            <button type="button" class="lang-item" data-lang="fr"><span class="lang-name">French</span><span class="lang-code">FR</span></button>
+                            <button type="button" class="lang-item" data-lang="es"><span class="lang-name">Spanish</span><span class="lang-code">ES</span></button>
+                            <button type="button" class="lang-item" data-lang="de"><span class="lang-name">German</span><span class="lang-code">DE</span></button>
+                            <button type="button" class="lang-item" data-lang="ru"><span class="lang-name">Russian</span><span class="lang-code">RU</span></button>
+                            <button type="button" class="lang-item" data-lang="tr"><span class="lang-name">Turkish</span><span class="lang-code">TR</span></button>
+                            <button type="button" class="lang-item" data-lang="hi"><span class="lang-name">Hindi</span><span class="lang-code">HI</span></button>
+                        </div>
+                        <div class="lang-dropdown-footer">
+                            <span>Powered by Google Translate</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="../contact/index.html" class="poweraim-btn-primary nav-cta">Get a Quote</a>
+                <button class="poweraim-mobile-toggle" id="poweraimMobileToggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Details Hero Banner -->
+    <div class="project-detail-hero">
+        <div class="poweraim-container">
+            <div class="project-breadcrumb">
+                <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <span>/</span>
+                <a href="index.html">Projects</a>
+                <span>/</span>
+                <span id="breadcrumbCategory">Dams & Hydropower</span>
+                <span>/</span>
+                <span id="breadcrumbTitle" style="color: #ffffff; font-weight: 600;">Project Details</span>
+            </div>
+            <span class="hero-badge" id="projectCategoryBadge"><i class="fa-solid fa-award"></i> Dams & Hydropower</span>
+            <h1 id="projectHeroTitle">5th Periodic Inspection – Khanpur Dam</h1>
+            <div class="project-hero-meta-bar">
+                <div class="hero-meta-item">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <div>
+                        <span style="font-size: 11px; opacity: 0.8; display: block;">CLIENT / PARTNER</span>
+                        <strong id="heroClientName">Water & Power Development Authority (WAPDA)</strong>
+                    </div>
+                </div>
+                <div class="hero-meta-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span style="font-size: 11px; opacity: 0.8; display: block;">LOCATION</span>
+                        <strong id="heroLocation">Haripur, KPK, Pakistan</strong>
+                    </div>
+                </div>
+                <div class="hero-meta-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <span style="font-size: 11px; opacity: 0.8; display: block;">STATUS</span>
+                        <strong id="heroStatus">Completed Successfully</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Project Content & Sidebar -->
+    <section class="project-detail-main-section">
+        <div class="poweraim-container">
+            <div class="project-detail-grid-layout">
+                
+                <!-- Left Column: Scope & Visuals -->
+                <div class="project-detail-left-content">
+                    
+                    <div class="project-main-image-container">
+                        <img id="projectMainImage" src="../wp-content/plugins/poweraim-core/assets/images/khanpur_dam_1.jpg" alt="Project Showcase Image">
+                    </div>
+
+                    <!-- Scope of Services Card -->
+                    <div class="project-detail-card">
+                        <h3><i class="fa-solid fa-file-signature"></i> Detailed Scope of Services</h3>
+                        <p id="projectScopeText">
+                            The scope of periodic inspection included a comprehensive review and on-site assessment of the dam structure, foundations, abutments, and reservoir rim to evaluate stability, seepage, settlement, erosion, and other signs of distress. It also covered inspection of spillways, outlet works, gates, valves, energy dissipation arrangements, and associated mechanical and electrical systems to verify operational reliability.
+                        </p>
+                        <p>
+                            The inspection further assessed hydrological and hydraulic adequacy by reviewing design flood standards against updated hydrological data. Based on the findings, Consultants identified deficiencies, prioritized risks, and provided recommendations for remedial measures, maintenance, or rehabilitation to ensure dam safety and compliance with regulatory requirements.
+                        </p>
+                    </div>
+
+                    <!-- Key Technical Highlights Card -->
+                    <div class="project-detail-card">
+                        <h3><i class="fa-solid fa-microchip"></i> Key Engineering Highlights & Deliverables</h3>
+                        <ul class="project-highlights-list" id="projectHighlightsContainer">
+                            <li><i class="fa-solid fa-check-circle"></i> Dam Safety Surveillance & Risk Evaluation</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Spillway & Hydro-Mechanical Gates Inspection</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Hydrological Flood Frequency Re-evaluation</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Foundation Seepage & Stability Analysis</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Right Sidebar: Info Widget & CTAs -->
+                <div class="project-detail-sidebar">
+                    <div class="project-sidebar-sticky">
+                        
+                        <div class="project-info-widget">
+                            <h4><i class="fa-solid fa-circle-info"></i> Project Specifications</h4>
+                            
+                            <div class="widget-info-row">
+                                <div class="widget-info-label">Sector / Category</div>
+                                <div class="widget-info-value" id="widgetCategory">Dams & Hydropower</div>
+                            </div>
+
+                            <div class="widget-info-row">
+                                <div class="widget-info-label">Client / Agency</div>
+                                <div class="widget-info-value" id="widgetClient">Water & Power Development Authority (WAPDA)</div>
+                            </div>
+
+                            <div class="widget-info-row">
+                                <div class="widget-info-label">Location / Region</div>
+                                <div class="widget-info-value" id="widgetLocation">Pakistan</div>
+                            </div>
+
+                            <div class="widget-info-row">
+                                <div class="widget-info-label">Services Provided</div>
+                                <div class="widget-info-value">Feasibility, Design Review & Safety Inspection</div>
+                            </div>
+
+                            <div style="margin-top: 24px;">
+                                <a href="index.html#cat-dams" id="btnBackToCategory" class="btn-back-projects">
+                                    <i class="fa-solid fa-arrow-left"></i> Back to Projects
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CTA Card -->
+                        <div class="cta-contact-widget">
+                            <h4>Need Similar Engineering Solutions?</h4>
+                            <p>Our multidisciplinary team delivers world-class consulting, detailed design, and project supervision.</p>
+                            <a href="../contact/index.html" class="btn-widget-contact">
+                                Request Consultation <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="poweraim-footer">
+        <div class="poweraim-container poweraim-footer-inner">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/poweraim_official_logo.png" alt="POWER AIM" style="height: 50px; width: auto;">
+                    <span style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: #fff; margin-left: 10px;">POWER AIM</span>
+                </div>
+                <p>Power Aim is a premier multidisciplinary engineering consultancy delivering excellence across dams, energy, transportation, buildings, and infrastructure.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/index.html">About Us</a></li>
+                    <li><a href="../services/index.html">Our Services</a></li>
+                    <li><a href="index.html">Projects Portfolio</a></li>
+                    <li><a href="../contact/index.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Plaza 114, Spring North, Bahria Town Phase 7, Rawalpindi</p>
+                <p><i class="fa-solid fa-phone"></i> +92 51 5172035</p>
+                <p><i class="fa-solid fa-envelope"></i> info@poweraim.com.pk</p>
+            </div>
+        </div>
+        <div class="poweraim-footer-bottom">
+            <div class="poweraim-container">
+                <p>&copy; 2026 POWER AIM Engineering Services (Pvt.) Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Translate Script -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,ur,ar,zh-CN,fr,es,de,ru,tr,hi',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../wp-content/plugins/poweraim-core/assets/js/main.js"></script>
+
+    <!-- Comprehensive Project Database Script -->
+    <script>
+    var projectsDB = {
+        "khanpur-dam": {
+            title: "5th Periodic Inspection – Khanpur Dam",
+            category: "Dams & Hydropower",
+            catId: "cat-dams",
+            client: "Water & Power Development Authority (WAPDA)",
+            location: "Haripur, Khyber Pakhtunkhwa, Pakistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/khanpur_dam_1.jpg",
+            scope: "The scope of periodic inspection included a comprehensive review and on-site assessment of the dam structure, foundations, abutments, and reservoir rim to evaluate stability, seepage, settlement, erosion, and other signs of distress. It also covered inspection of spillways, outlet works, gates, valves, energy dissipation arrangements, and associated mechanical and electrical systems to verify operational reliability. The inspection further assessed hydrological and hydraulic adequacy by reviewing design flood standards against updated hydrological data. Based on the findings, Consultants identified deficiencies, prioritized risks, and provided recommendations for remedial measures, maintenance, or rehabilitation to ensure dam safety and compliance with regulatory requirements.",
+            highlights: ["Dam Safety Evaluation & Risk Priority Index", "Spillway & Hydro-Mechanical Gates Inspection", "Hydrological Flood Frequency Re-evaluation", "Seepage & Foundation Stability Analysis"]
+        },
+        "thak-chillas": {
+            title: "Design and Construction Supervision of 04MW Hydropower Project, Thak Chillas",
+            category: "Dams & Hydropower",
+            catId: "cat-dams",
+            client: "Public Works Department (PWD), Gilgit Baltistan",
+            location: "Thak, Chillas, Gilgit Baltistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/chillas_1.jpg",
+            scope: "Detailed engineering design review, preparation of tender documents and construction supervision of civil and electro-mechanical works and preparation of Environment Impact Assessment (EIA) and Environmental and Social Management Framework (ESMF) reports.",
+            highlights: ["Run-of-the-river 4MW Hydropower Design", "Weir, Headrace, Forebay & Powerhouse Engineering", "Electro-mechanical Turbine Sizing & Grid Interconnection", "Environmental & Social Safeguards (EIA & ESMF)"]
+        },
+        "goronyo-dam": {
+            title: "Rehabilitation & Dam Safety Improvement of Goronyo Dam (World Bank Funded)",
+            category: "Dams & Hydropower",
+            catId: "cat-dams",
+            client: "Federal Ministry of Water Resources, Nigeria (TRIMING)",
+            location: "Sokoto Rima River Basin, Nigeria",
+            status: "Completed (World Bank Funded)",
+            img: "../wp-content/plugins/poweraim-core/assets/images/goronyo_1.jpg",
+            scope: "The services comprised five major components including: 1) Review of existing detailed design and update it for construction stage along with preparation of construction drawings; 2) Prepared dam safety guidelines (EAP, O&M Manual, Surveillance & Monitoring Manual, Dam Break Studies) for three dams; 3) Detailed design of river training works including flood protection, embankment repairs, canal re-excavation, and riverbank protection; 4) Updating environmental and social safeguard documents (ESMF and RAP); 5) Full construction supervision covering contractor submissions, civil, hydro-mechanical and electro-mechanical works, quality assurance through testing, and management of commissioning.",
+            highlights: ["World Bank TRIMING Funded Project", "Dam Safety Guidelines & EAP Formulation", "River Training & Flood Embankment Engineering", "Full Construction Supervision & Commissioning"]
+        },
+        "rawal-dam": {
+            title: "Safety Evaluation of Rawal Dam and Emergency Action Plan for 66 Small Dams in Potohar Zone",
+            category: "Dams & Hydropower",
+            catId: "cat-dams",
+            client: "Punjab Irrigation Department, Govt. of the Punjab",
+            location: "Rawalpindi & Potohar Zone, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/rawal_dam_lulc.png",
+            scope: "Power Aim engaged in design studies for the rehabilitation of the Rawal Dam Project, conducting risk evaluations and safety assessments, and developing Emergency Action Plans (EAPs) for 60 medium- to high-hazard dams in the Potohar region of Punjab, Pakistan.",
+            highlights: ["66 Small Dams Safety Evaluation", "Emergency Action Plans (EAP) Formulation", "Hazard Classification & Inundation Mapping", "Rehabilitation & Modernization Strategy"]
+        },
+        "dhar-jawa": {
+            title: "Feasibility Study and Detailed Design of Dhar Jawa Dam Project",
+            category: "Dams & Hydropower",
+            catId: "cat-dams",
+            client: "Punjab Irrigation Department, Govt. of the Punjab",
+            location: "Punjab, Pakistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/dhar_jawa_dam.png",
+            scope: "Supervision of topographic surveys, geotechnical investigations and Electrical Resistance Tomography (ERT) surveys. Carried out feasibility level engineering design, preparation of PC-I and Tender Documents.",
+            highlights: ["ERT Geophysical & Geotechnical Investigations", "Hydrological Catchment Yield Modeling", "Dam Embankment & Spillway Design", "PC-I & Detailed Tender Packaging"]
+        },
+        "deg-outfall": {
+            title: "Engineering Design of Spillway & Power House of 4.0 MW Deg Outfall Hydropower Project",
+            category: "Dams & Hydropower",
+            catId: "cat-dams",
+            client: "Sinotec Co. Ltd.",
+            location: "Punjab, Pakistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/deg_outfall_hydropower.png",
+            scope: "Detailed engineering design and preparation of construction drawings for the spillway, powerhouse structural strengthening, stability assessment, hydraulic CFD modelling, HEC-RAS 2D flood modelling, and reinforcement design.",
+            highlights: ["Computational Fluid Dynamics (CFD) Spillway Modelling", "HEC-RAS Hydraulic Seepage & Scour Analysis", "Structural Powerhouse Reinforcement Design", "Detailed Construction Drawings"]
+        },
+        "pakpattan-marala": {
+            title: "O&M Contractor Procurement for Pakpattan (2.82 MW) & Marala (7.64 MW) Hydropower Plants",
+            category: "Dams & Hydropower",
+            catId: "cat-dams",
+            client: "Punjab Power Development Company Limited (PPDCL)",
+            location: "Punjab, Pakistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg",
+            scope: "Consultancy services for procurement process for selecting the O&M contractor for power plants in accordance with PPRA Rules, PEC Policy, and NEPRA Guidelines. Scope included prequalification documents, RFP development, and technical/financial evaluation.",
+            highlights: ["PPRA & NEPRA Compliant Procurement", "RFP & Technical Bidding Evaluation", "O&M Performance Metrics & KPI Structuring", "Contract Award & Negotiation Support"]
+        },
+        "chashma-canal": {
+            title: "Construction Supervision & Management of Chashma Right Bank Canal (CRBC) Project",
+            category: "Canals & Irrigations",
+            catId: "cat-canals",
+            client: "Water and Power Development Authority (WAPDA)",
+            location: "Khyber Pakhtunkhwa & Punjab, Pakistan",
+            status: "Completed / Ongoing",
+            img: "../wp-content/plugins/poweraim-core/assets/images/chashma_right_bank_canal.jpg",
+            scope: "Review of existing detailed design and update for construction stage, preparation of tender documents for all packages, detailed design of river training works including flood protection, embankment repairs, canal re-excavation, updating ESMF & RAP, and construction supervision of civil, hydro-mechanical and electro-mechanical works.",
+            highlights: ["Mega Lift-Cum-Gravity Irrigation Network", "Flood Embankment & River Training Design", "Quality Assurance & Testing Verification", "Contract Administration under FIDIC"]
+        },
+        "kharmang-lift": {
+            title: "Feasibility Study of Lift Irrigation & Water Supply in GBA-11 Kharmang",
+            category: "Canals & Irrigations",
+            catId: "cat-canals",
+            client: "C&W Department, Gilgit Baltistan",
+            location: "Kharmang Valley, Gilgit Baltistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/kharmang_lift_irrigation.jpg",
+            scope: "Water availability and flow assessment study, topographic surveys, design of water distribution network, high-head pump selection and sizing, climate and environmental study, economic and financial feasibility.",
+            highlights: ["High-Head Mountain Lift Irrigation", "Water Distribution Piping Network", "Pump Station Sizing & Energy Economics", "Environmental & Agricultural Impact Assessment"]
+        },
+        "punjab-re-roadmap": {
+            title: "Renewable Energy Roadmap for Punjab (Chief Minister's RE Initiative)",
+            category: "Renewable Energy",
+            catId: "cat-renewable",
+            client: "Punjab Power Development Company Limited (PPDCL)",
+            location: "Punjab, Pakistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/renewable_energy_roadmap_punjab.jpg",
+            scope: "Review of renewable energy policies, regulations, and frameworks at federal and provincial levels; resource potential assessment for solar, wind, biomass, waste-to-energy, and mini/micro-hydro; and formulation of a strategic 10-year renewable energy roadmap.",
+            highlights: ["10-Year Clean Energy Masterplan", "Resource Mapping across 36 Districts", "Regulatory & Tariff Policy Harmonization", "Financial & Investment Feasibility"]
+        },
+        "umoyilanga-solar": {
+            title: "Insulation Coordination Study for 115 MW Umoyilanga Solar PV Plant - South Africa",
+            category: "Renewable Energy",
+            catId: "cat-renewable",
+            client: "Meena Consultancy and General Contracting DMCC",
+            location: "Avondale, Northern Cape, South Africa",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/umoyilanga_solar_plant.jpg",
+            scope: "Hydrological analysis and design of flood management works. Temporary Overvoltage (TOV), Ferro-resonance analysis, Surge Arrestor parameter specification, and insulation coordination modeling.",
+            highlights: ["115 MW Utility Scale Solar PV", "EMTP / PSCAD Insulation Coordination", "TOV & Ferro-resonance Transients Analysis", "Surge Protection Engineering"]
+        },
+        "mooi-plaats-solar": {
+            title: "Insulation Coordination Study for 283 MWp Mooi Plaats PV Solar Plant - South Africa",
+            category: "Renewable Energy",
+            catId: "cat-renewable",
+            client: "Meena Consultancy and General Contracting DMCC",
+            location: "Mooi Plaats, South Africa",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/mooi_plaats_solar_plant.jpg",
+            scope: "Temporary Overvoltage (TOV), Longitudinal Overvoltage, Ferro-resonance, Surge Arrestor parameter specification, and full engineering report generation.",
+            highlights: ["283 MWp Mega Solar Park", "High Voltage Transient Overvoltage Analysis", "Substation Surge Arrestor Optimization", "Grid Code Compliance"]
+        },
+        "avondale-flood": {
+            title: "Hydrological Analysis & Flood Management Works for Avondale Solar PV Area",
+            category: "Renewable Energy",
+            catId: "cat-renewable",
+            client: "Meena Consultancy and General Contracting DMCC",
+            location: "South Africa",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg",
+            scope: "Hydraulic modelling and design of drainage channels, outfall structures, and cross-drainage works using HEC-RAS and Civil 3D for 50-year flood events with adequate freeboard, cut-and-fill computations, and integration with existing facilities.",
+            highlights: ["50-Year Flood Hydrology & Inundation Mapping", "HEC-RAS 2D Hydrodynamic Modeling", "Stormwater Channel & Culvert Design", "Civil 3D Earthwork Optimization"]
+        },
+        "mooi-plaats-drainage": {
+            title: "Drainage Design of Internal Roads for 283 MWp Mooi Plaats Solar PV Plant",
+            category: "Renewable Energy",
+            catId: "cat-renewable",
+            client: "Meena Consultancy and General Contracting DMCC",
+            location: "South Africa",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg",
+            scope: "Evaluation of catchment areas, discharge, and capacity assessments; design strategies and detailed engineering for drainage and cross-drainage structures; and hydraulic analysis using Hydraflow Express and Autodesk Civil 3D.",
+            highlights: ["Catchment Hydrology & Runoff Analysis", "Internal Road Network Cross-Drainage", "Hydraflow Express Hydraulic Sizing", "Erosion Control & Channel Lining"]
+        },
+        "hesco-losses": {
+            title: "Assessment of HESCO Transmission and Distribution Losses Evaluation Study FY 2023-24",
+            category: "Electrical Projects",
+            catId: "cat-electrical",
+            client: "Hyderabad Electric Supply Company (HESCO)",
+            location: "Sindh, Pakistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg",
+            scope: "1200 Km LT and 28,000 Km HT network survey and preparation of Synergy readable GIS and .mdb files to calculate transmission and distribution losses using Synergy software.",
+            highlights: ["29,200 Km Grid & Distribution Network Survey", "Synergy Modeling & Power Flow Analysis", "Segregation of Technical & Commercial Losses", "Loss Reduction Capital Investment Plan"]
+        },
+        "gepco-losses": {
+            title: "Third Party Study & Evaluation of T&D Losses of GEPCO Network",
+            category: "Electrical Projects",
+            catId: "cat-electrical",
+            client: "Gujranwala Electric Power Company (GEPCO)",
+            location: "Gujranwala Division, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg",
+            scope: "980 Km LT survey and preparation of Synergy readable GIS and .mdb files to calculate transmission and distribution losses and segregate technical and administrative losses.",
+            highlights: ["GIS-Based Feeder Network Mapping", "Technical vs Administrative Loss Segregation", "Transformer Load Factor Optimization", "Synergy Software Validation"]
+        },
+        "gb-power-upgrade": {
+            title: "Feasibility Study for Improvement & Up-Gradation of Power System in Gilgit Baltistan",
+            category: "Electrical Projects",
+            catId: "cat-electrical",
+            client: "Water and Power Department (WPD), Gilgit Baltistan",
+            location: "Gilgit, Skardu, Astore, Chilas",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/gb_power_system_feasibility.png",
+            scope: "10-year load forecast and feasibility study for upgrading power systems in Gilgit, Skardu, Astore, and Chilas. SCADA-based control, energy audits, master plan, PC-1s, cost estimates, BOQs, tender documents, GIS consumer surveys, and interactive GIS dashboard.",
+            highlights: ["10-Year Multi-City Power Load Forecasting", "SCADA-Enabled Distribution Automation", "Comprehensive HT/LT GIS Asset Survey", "Interactive Web-GIS Energy Dashboard"]
+        },
+        "regional-grid-gb": {
+            title: "Establishment of Regional Grid (Phase-I), Gilgit Baltistan",
+            category: "Electrical Projects",
+            catId: "cat-electrical",
+            client: "Water and Power Department (WPD), Gilgit Baltistan",
+            location: "Gilgit Baltistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/regional_grid_gb_phase1.png",
+            scope: "Engineering design, substation layouts, grid interconnection strategy, load flow studies, short circuit analysis, and protective relaying design.",
+            highlights: ["High Voltage Interconnection Strategy", "Substation Architectural & Electrical Engineering", "Load Flow & Transient Stability Analysis", "Grid Protection & Earthing Design"]
+        },
+        "gurdwara-dera-sahib": {
+            title: "Revamping of Electrical Distribution System of Gurdwara Dera Sahib – Lahore",
+            category: "Electrical Projects",
+            catId: "cat-electrical",
+            client: "Evacuee Trust Property Board (ETPB)",
+            location: "Lahore, Pakistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/gurdwara_dera_sahib_electrical.png",
+            scope: "HT/LT layouts, cable sizing, sub-station designs, safety earthing, external architectural lighting, and internal distribution revamp for the historic Gurdwara complex.",
+            highlights: ["Heritage Complex Electrical Modernization", "Underground HT/LT Cable Distribution", "Substation Relocation & Safety Earthing", "Architectural Illumination & Backup Power"]
+        },
+        "audit-account-housing": {
+            title: "Electrical Distribution System Design of Audit & Account Housing Society (Phase-II)",
+            category: "Electrical Projects",
+            catId: "cat-electrical",
+            client: "Audit and Account Housing Society",
+            location: "Lahore, Pakistan (250 Acres)",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg",
+            scope: "Electrical distribution layout, load calculation, underground cabling network design, substation locations, and road lighting engineering for a 250-acre housing development.",
+            highlights: ["250-Acre Master Planned Community", "100% Underground Electrical Network", "Substation Sizing & Load Balancing", "Energy-Efficient LED Street Lighting"]
+        },
+        "fesco-losses": {
+            title: "Technical Losses Study & Improvement Proposal of FESCO Network",
+            category: "Electrical Projects",
+            catId: "cat-electrical",
+            client: "Faisalabad Electric Supply Company (FESCO)",
+            location: "Faisalabad, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_3.jpg",
+            scope: "1400 Km LT survey and preparation of Synergy readable GIS and .mdb databases to calculate system losses and propose measurement improvements.",
+            highlights: ["1400 Km Extensive Network Survey", "Feeder-Level Technical Loss Computation", "Loss Reduction CAPEX Recommendation", "Synergy GIS Database Deliverables"]
+        },
+        "shimshal-road": {
+            title: "Detailed Feasibility Study for Shimshal Road and Construction of R.C.C Bridges",
+            category: "Roads & Highways",
+            catId: "cat-roads",
+            client: "C&W Department, Gilgit Baltistan",
+            location: "Shimshal Valley, Hunza, Gilgit Baltistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/shimshal_road_bridge.png",
+            scope: "Geotechnical investigations, topographical surveys, route alignment study in extreme high-altitude terrain, pavement engineering design, RCC bridge and culvert structural design, Environmental Impact Assessment (EIA), and PC-1 preparation.",
+            highlights: ["Extreme Mountain Terrain Alignment", "RCC Bridge Structural Engineering", "Geotechnical & Avalanche Risk Mitigation", "PC-I Documentation & Cost Engineering"]
+        },
+        "tanawal-interchange": {
+            title: "Feasibility Study & Detailed Design of Tanawal Interchange on Hazara Motorway",
+            category: "Roads & Highways",
+            catId: "cat-roads",
+            client: "National Highway Authority (NHA)",
+            location: "Village Potha, Mansehra, KPK",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/tanawal_interchange.png",
+            scope: "Pavement and geometric design, structural calculations for bridge and ramp structures, traffic volume forecasts, toll plaza layout, and environmental assessments.",
+            highlights: ["Hazara Motorway Grade-Separated Junction", "Pavement & Geometric Alignment Design", "Traffic Volume & Toll Plaza Engineering", "NHA / AASHTO Design Standards"]
+        },
+        "rakhi-gaj-n70": {
+            title: "Construction Supervision for Widening & Strengthening of Rakhi Gaj-Bewata (N-70)",
+            category: "Roads & Highways",
+            catId: "cat-roads",
+            client: "National Highway Authority (NHA)",
+            location: "N-70 Package-II (13.151 Km)",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_3.jpg",
+            scope: "Full construction supervision, engineering checks, quality control testing, slope stabilization verification, and FIDIC contract management.",
+            highlights: ["Strategic East-West National Highway N-70", "Mountain Rock Cutting & Slope Stabilization", "Material Testing & Quality Assurance", "FIDIC Contract Administration"]
+        },
+        "tateypur-m4": {
+            title: "Design Review & Construction Supervision of Tatey pur Interchange on M-4",
+            category: "Roads & Highways",
+            catId: "cat-roads",
+            client: "National Highway Authority (NHA)",
+            location: "M-4 Motorway, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_1.jpg",
+            scope: "Technical review of detailed engineering drawings, quality assurance during construction, structural bridge checks, and progress reporting.",
+            highlights: ["M-4 Motorway Interchange Supervision", "Structural Flyover & Ramp Verification", "Traffic Safety & Signage Integration", "NHA Quality Compliance"]
+        },
+        "abdul-hakim-m2": {
+            title: "Feasibility Study & Detailed Design for Interchange at (M-2) Abdul Hakim Motorway",
+            category: "Roads & Highways",
+            catId: "cat-roads",
+            client: "National Highway Authority (NHA)",
+            location: "Essan, Sharaqpur (20 km from M-2)",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg",
+            scope: "Traffic data collection and projection, interchange structural design, toll plaza infrastructure, earthwork computation, and geotechnical investigations.",
+            highlights: ["Major Motorway Connectivity Interchange", "Traffic Simulation & Capacity Analysis", "Structural Flyover Design", "Comprehensive Tender Documentation"]
+        },
+        "jamal-din-m5": {
+            title: "Feasibility Study & Detailed Design of Jamal Din Wali Interchange on M-5",
+            category: "Roads & Highways",
+            catId: "cat-roads",
+            client: "National Highway Authority (NHA)",
+            location: "Sukkur - Multan Motorway (M-5)",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg",
+            scope: "Route alignment selection, 3D geometric modeling, bridge and ramp structural engineering, and bidding document preparation.",
+            highlights: ["M-5 Motorway High-Speed Interchange", "3D Geometric Modeling in Civil 3D", "Structural Bridge & Drainage Engineering", "Tender Packaging & BOQ Estimation"]
+        },
+        "tandlianwala-m3": {
+            title: "Feasibility Study & Detailed Design for Interchange at Tandlianwala on M-3 Motorway",
+            category: "Roads & Highways",
+            catId: "cat-roads",
+            client: "National Highway Authority (NHA)",
+            location: "District Faisalabad, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg",
+            scope: "Hydrological analysis, traffic volume forecasts, geometrical design, and contract packaging.",
+            highlights: ["M-3 Motorway Regional Linkage", "Hydrological Drainage & Culvert Design", "Pavement Structural Calculations", "Economic & Financial Feasibility Analysis"]
+        },
+        "rhq-hospital-skardu": {
+            title: "Master Planning & Architectural Design of RHQ Hospital Skardu",
+            category: "Building Projects",
+            catId: "cat-buildings",
+            client: "C&W Department, Gilgit Baltistan",
+            location: "Skardu, Gilgit Baltistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/rhq_hospital_skardu.jpg",
+            scope: "Condition surveys, geotechnical investigations, medical planning, architectural design, seismic-resistant structural design, and hospital master planning in accordance with future healthcare demands.",
+            highlights: ["Multi-Specialty Regional Hospital Planning", "Seismic Zone 4 Structural Engineering", "Modern Healthcare HVAC & Medical Gases", "Future Expansion Master Plan"]
+        },
+        "hec-regional-quetta": {
+            title: "Planning, Design & Supervision of HEC Regional Centre at Quetta (45,000 Sq.ft)",
+            category: "Building Projects",
+            catId: "cat-buildings",
+            client: "Higher Education Commission (HEC)",
+            location: "Quetta, Balochistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/hec_regional_centre_quetta.png",
+            scope: "Full architectural design, structural design, mechanical, electrical & plumbing (MEP) utilities of international standards, auditorium, digital libraries, and site construction supervision.",
+            highlights: ["45,000 Sq.ft Modern Educational Complex", "State-of-the-Art Auditorium & Digital Labs", "High Seismic Design Standards", "End-to-End Construction Supervision"]
+        },
+        "sbp-multan-cracks": {
+            title: "Detailed Investigation of Cracks in Annexe Building at SBP BSC Multan",
+            category: "Building Projects",
+            catId: "cat-buildings",
+            client: "State Bank of Pakistan, Bank Service Corporation, Multan",
+            location: "Multan, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_1.jpg",
+            scope: "Condition surveys, geotechnical soil investigation, destructive and non-destructive testing (NDT) of concrete structure, crack monitoring, 3D structural modeling, and remedial retrofitting design.",
+            highlights: ["Non-Destructive Concrete Testing (NDT)", "Crack Propagation & Settlement Analysis", "SAP2000 Structural Retrofit Modeling", "Remedial Strengthening Scheme"]
+        },
+        "sheikh-zaid-cafeteria": {
+            title: "Architectural Design & Supervision of Main Cafeteria of Sheikh Zaid Hospital",
+            category: "Building Projects",
+            catId: "cat-buildings",
+            client: "Sheikh Zaid Hospital, Lahore",
+            location: "Lahore, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg",
+            scope: "Architectural layout design, commercial kitchen ventilation, sanitary routing, electrical distribution, modern interior styling, and structural checks.",
+            highlights: ["Modern Commercial Cafeteria Facility", "Industrial Kitchen Exhaust & HVAC", "Contemporary Interior Aesthetics", "Construction Oversight"]
+        },
+        "shulja-slope-failure": {
+            title: "Feasibility Study of Slope Failure in Shulja Dilkhsan & Daeen Area of Chatorkhand",
+            category: "GIS & Geohazards",
+            catId: "cat-gis",
+            client: "Public Works Department (PWD), Gilgit",
+            location: "Chatorkhand, Gilgit Baltistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg",
+            scope: "Geotechnical investigations, soil erosion analysis, Electrical Resistance Tomography (ERT) geophysical surveys, landslide hazard risk mapping, and slope stabilization engineering.",
+            highlights: ["Geophysical ERT Subsurface Profiling", "Landslide Hazard Vulnerability Mapping", "Slope Stability Limit Equilibrium Analysis", "Rock Anchor & Bio-Engineering Protection"]
+        },
+        "gis-risk-mapping": {
+            title: "Comprehensive GIS Mapping, Hazard Risk Assessment & Remote Sensing Modeling",
+            category: "GIS & Geohazards",
+            catId: "cat-gis",
+            client: "Various National & International Agencies",
+            location: "Pakistan & Regional",
+            status: "Ongoing & Completed Studies",
+            img: "../wp-content/plugins/poweraim-core/assets/images/rawal_dam_lulc.png",
+            scope: "Digital Elevation Modeling (DEM), Slope Stability Analysis, Soil Erosion Vulnerability Assessments, Satellite Topography, and Landslide Mitigation Strategies.",
+            highlights: ["Satellite Multispectral Remote Sensing", "Digital Elevation Model (DEM) Extraction", "LULC Land Cover Classification", "Watershed Flood Risk Modeling"]
+        },
+        "madyan-hhp": {
+            title: "Detailed Design of Surface & Underground Structures for 157 MW Madyan Hydropower",
+            category: "Sub-Consultant",
+            catId: "cat-sub",
+            client: "EGC (Pvt) Ltd / SMEC International Pty Ltd",
+            location: "Swat, Khyber Pakhtunkhwa",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_1.jpg",
+            scope: "Detailed engineering design, tender drawings of surface and underground structures, rock cut slopes at abutments, and seepage analysis for 157 MW Madyan Hydropower Project.",
+            highlights: ["157 MW Mega Hydropower Scheme", "Underground Cavern & Tunnel Engineering", "Rock Slope Stability & Seepage Modeling", "Joint Venture with SMEC International"]
+        },
+        "diamer-basha-tunnel": {
+            title: "Feasibility Study of Tunnel Alignment at Diamer Basha Dam Right Bank Road",
+            category: "Sub-Consultant",
+            catId: "cat-sub",
+            client: "Tunnel Institute of Pakistan (TIP)",
+            location: "Diamer Basha Dam, Gilgit Baltistan",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_3.jpg",
+            scope: "Feasibility study, rock mass classification (Q & RMR), geological mapping, and tunnel alignment design for the periphery road of Diamer Basha Dam Project.",
+            highlights: ["Mega Dam Periphery Highway Tunnel", "Geological & Rock Mass Classification", "Tunnel Structural Support Design", "Collaboration with Tunnel Institute of Pakistan"]
+        },
+        "karachi-k4-grid": {
+            title: "Civil & Structural Design of Grid Station for Karachi Water Supply (K-4)",
+            category: "Sub-Consultant",
+            catId: "cat-sub",
+            client: "Power Planner International (PPI) Pvt Ltd",
+            location: "Karachi, Sindh",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg",
+            scope: "Civil design of high-voltage electrical grid station, transformer foundations, switchyard structures, and control room building for Karachi Water Supply (K-4).",
+            highlights: ["K-4 Greater Karachi Water Supply Scheme", "HV Substation Civil Engineering", "Heavy Transformer Foundation Design", "Structural Earthquake Resilience"]
+        },
+        "ravi-urban-embankment": {
+            title: "Review of Embankment Design & Hydraulic Analysis of River Ravi Urban Project",
+            category: "Sub-Consultant",
+            catId: "cat-sub",
+            client: "EGC (Pvt) Ltd / SMEC International",
+            location: "Lahore, Punjab",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg",
+            scope: "Review of river embankment design, structural modeling, hydraulic analysis, and flood protection for River Ravi Urban Development Project (RRUDP).",
+            highlights: ["River Ravi Mega Urban Development", "Flood Protection Embankment Modeling", "2D River Hydraulics & Scour Protection", "International SMEC Quality Peer Review"]
+        },
+        "swat-motorway-p3": {
+            title: "Geotechnical & Soil Investigation Review for Swat Motorway Phase-III",
+            category: "Sub-Consultant",
+            catId: "cat-sub",
+            client: "EGC (Pvt) Ltd / SMEC International",
+            location: "Chakdara to Fatehpur, KPK",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg",
+            scope: "Review of geotechnical investigation reports, borehole data, soil classification, and construction materials testing for Swat Motorway Phase-III expressway.",
+            highlights: ["Expressway Geotechnical Verification", "Borehole & Foundation Subsurface Review", "Construction Materials Quality Audit", "Pavement Base Course Engineering"]
+        },
+        "oman-agriculture": {
+            title: "Land Suitability Study - Oman Agriculture Project",
+            category: "Sub-Consultant",
+            catId: "cat-sub",
+            client: "SMEC International Pty Ltd",
+            location: "Sultanate of Oman",
+            status: "Completed",
+            img: "../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg",
+            scope: "Land suitability classification, GIS soil salinity mapping, groundwater irrigation assessments, and agricultural development planning in the Sultanate of Oman.",
+            highlights: ["International Agri-Consulting in Middle East", "GIS Soil Suitability & Salinity Mapping", "Arid Climate Irrigation Assessment", "SMEC International Partnership"]
+        }
+    };
+
+    function loadProjectDetails() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var projId = urlParams.get('id');
+        
+        if (!projId || !projectsDB[projId]) {
+            projId = 'khanpur-dam';
+        }
+
+        var proj = projectsDB[projId];
+
+        document.getElementById('pageTitle').innerText = proj.title + ' - POWER AIM';
+        document.getElementById('breadcrumbCategory').innerText = proj.category;
+        document.getElementById('breadcrumbTitle').innerText = proj.title;
+        document.getElementById('projectCategoryBadge').innerHTML = '<i class="fa-solid fa-award"></i> ' + proj.category;
+        document.getElementById('projectHeroTitle').innerText = proj.title;
+        document.getElementById('heroClientName').innerText = proj.client;
+        document.getElementById('heroLocation').innerText = proj.location;
+        document.getElementById('heroStatus').innerText = proj.status;
+
+        document.getElementById('projectMainImage').src = proj.img;
+        document.getElementById('projectMainImage').alt = proj.title;
+        document.getElementById('projectScopeText').innerText = proj.scope;
+
+        document.getElementById('widgetCategory').innerText = proj.category;
+        document.getElementById('widgetClient').innerText = proj.client;
+        document.getElementById('widgetLocation').innerText = proj.location;
+        document.getElementById('btnBackToCategory').href = 'index.html#' + proj.catId;
+
+        // Render highlights
+        var hlContainer = document.getElementById('projectHighlightsContainer');
+        hlContainer.innerHTML = '';
+        if (proj.highlights && proj.highlights.length > 0) {
+            proj.highlights.forEach(function(item) {
+                var li = document.createElement('li');
+                li.innerHTML = '<i class="fa-solid fa-check-circle"></i> ' + item;
+                hlContainer.appendChild(li);
+            });
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadProjectDetails);
+    </script>
+</body>
+</html>
