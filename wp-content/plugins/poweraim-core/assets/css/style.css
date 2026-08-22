@@ -2617,3 +2617,34 @@ body {
 
 
 
+
+
+.staff-photo-wrap {
+    margin-bottom: 18px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+
+.staff-photo, img.staff-photo {
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+    height: 110px !important;
+    min-height: 110px !important;
+    max-height: 110px !important;
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+    border: 3px solid #0284c7 !important;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2) !important;
+    background: #ffffff !important;
+    display: block !important;
+    transition: transform 0.3s ease !important;
+}
+
+.staff-profile-card:hover .staff-photo {
+    transform: scale(1.05) !important;
+}
