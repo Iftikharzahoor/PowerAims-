@@ -2648,13 +2648,3 @@ body {
 .staff-profile-card:hover .staff-photo {
     transform: scale(1.05) !important;
 }
-
-
-.poweraim-page-header {
-    background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(15, 23, 42, 0.9)), url('../images/navbar_bg_banner.jpg') center/cover no-repeat !important;
-    padding: 70px 0 !important;
-    color: #fff !important;
-    text-align: center !important;
-    position: relative !important;
-    border-bottom: 4px solid #2b82c9 !important;
-}
