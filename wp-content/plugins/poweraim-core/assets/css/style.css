@@ -3113,3 +3113,30 @@ body {
         padding: 30px 20px;
     }
 }
+
+
+.service-stage-right {
+    background: #f8fafc !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    position: relative !important;
+    min-height: 480px !important;
+    padding: 20px !important;
+}
+
+.service-stage-right img {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 520px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    border-radius: 8px !important;
+    transition: transform 0.3s ease !important;
+}
+
+.service-stage-zoom-badge {
+    display: none !important;
+}
