@@ -2648,3 +2648,468 @@ body {
 .staff-profile-card:hover .staff-photo {
     transform: scale(1.05) !important;
 }
+
+
+/* ==========================================================================
+   SERVICES MEGA-MENU DROPDOWN (NESPAK STYLE)
+   ========================================================================== */
+
+.nav-item-megamenu {
+    position: relative;
+}
+
+.poweraim-services-megamenu {
+    position: absolute;
+    top: 100%;
+    left: -150px;
+    width: 860px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18), 0 4px 12px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    margin-top: 12px;
+    display: flex;
+    gap: 28px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 99999;
+}
+
+.nav-item-megamenu:hover .poweraim-services-megamenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.megamenu-left-card {
+    flex: 0 0 280px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.megamenu-card-img {
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.megamenu-card-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 20%, #0f172a 100%);
+}
+
+.megamenu-card-content {
+    padding: 16px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    color: #ffffff;
+}
+
+.megamenu-badge {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #38bdf8;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.megamenu-card-content h3 {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff !important;
+    margin: 0 0 8px;
+    letter-spacing: 0.5px;
+}
+
+.megamenu-card-content p {
+    font-size: 12.5px;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.megamenu-explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #38bdf8 !important;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.megamenu-explore-btn:hover {
+    color: #7dd3fc !important;
+    transform: translateX(4px);
+}
+
+.megamenu-right-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.megamenu-heading {
+    margin-bottom: 14px;
+}
+
+.megamenu-heading h4 {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #c2410c !important; /* Elegant brick red / terracotta brand accent matching NESPAK style */
+    margin: 0 0 4px;
+}
+
+.megamenu-heading-line {
+    width: 60px;
+    height: 3px;
+    background: #c2410c;
+    border-radius: 2px;
+}
+
+.megamenu-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.megamenu-links-grid li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.megamenu-links-grid li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155 !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.megamenu-links-grid li a i {
+    font-size: 13px;
+    color: #0284c7;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.megamenu-links-grid li a:hover {
+    background: #f0f9ff;
+    color: #0284c7 !important;
+    transform: translateX(3px);
+}
+
+.megamenu-links-grid li a:hover i {
+    transform: scale(1.15);
+}
+
+/* Responsive adjustment for Mega-Menu on tablet */
+@media (max-width: 1100px) {
+    .poweraim-services-megamenu {
+        width: 720px;
+        left: -200px;
+    }
+    .megamenu-left-card {
+        flex: 0 0 220px;
+    }
+}
+
+/* ==========================================================================
+   INTERACTIVE SERVICES PAGE SHOWCASE STYLING
+   ========================================================================== */
+
+.services-showcase-section {
+    padding: 70px 0 50px;
+    background: #ffffff;
+}
+
+.service-active-stage {
+    background: #f8fafc;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+}
+
+.service-stage-left {
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.service-stage-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(2, 132, 199, 0.1);
+    color: #0284c7;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    align-self: flex-start;
+}
+
+.service-stage-title {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.service-stage-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 24px;
+}
+
+.service-stage-deliverables {
+    margin: 0 0 28px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-stage-deliverables li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: #334155;
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+.service-stage-deliverables li i {
+    color: #0284c7;
+    font-size: 14px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.service-stage-right {
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    min-height: 480px;
+}
+
+.service-stage-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.service-stage-right:hover img {
+    transform: scale(1.03);
+}
+
+.service-stage-zoom-badge {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(15, 23, 42, 0.85);
+    color: #ffffff;
+    backdrop-filter: blur(8px);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+}
+
+/* Services Grid Explorer */
+.services-explorer-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-explorer-header h3 {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 30px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.services-explorer-header p {
+    font-size: 16px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 70px;
+}
+
+.service-nav-card {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 26px 22px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.service-nav-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(2, 132, 199, 0.12);
+}
+
+.service-nav-card.active {
+    border-color: #0284c7;
+    background: linear-gradient(to bottom, #f0f9ff 0%, #ffffff 100%);
+    box-shadow: 0 12px 30px rgba(2, 132, 199, 0.18);
+}
+
+.service-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.service-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #e0f2fe;
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.25s ease;
+}
+
+.service-nav-card.active .service-card-icon,
+.service-nav-card:hover .service-card-icon {
+    background: #0284c7;
+    color: #ffffff;
+}
+
+.service-card-num {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 14px;
+    font-weight: 800;
+    color: #94a3b8;
+}
+
+.service-nav-card h4 {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.4;
+    margin: 0 0 10px;
+}
+
+.service-nav-card p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0 0 16px;
+    flex-grow: 1;
+}
+
+.service-card-action {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0284c7;
+}
+
+.service-card-action i {
+    transition: transform 0.2s ease;
+}
+
+.service-nav-card:hover .service-card-action i {
+    transform: translateX(4px);
+}
+
+@media (max-width: 991px) {
+    .service-active-stage {
+        grid-template-columns: 1fr;
+    }
+    .service-stage-right {
+        min-height: 360px;
+    }
+    .services-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-stage-left {
+        padding: 30px 20px;
+    }
+}
