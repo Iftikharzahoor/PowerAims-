@@ -502,110 +502,98 @@ class="post-5 page type-page status-publish ast-article-single" id="post-5" item
 
 
 
-    <!-- Contact Info Section -->
-
-    <section class="poweraim-contact">
-
+        <!-- Request an Engineering Quote Section -->
+    <section class="poweraim-quote-section" style="padding: 85px 0 75px; background: #f8fafc;">
         <div class="poweraim-container">
+            <div class="quote-section-card" style="max-width: 820px; margin: 0 auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 18px; padding: 45px 40px; box-shadow: 0 15px 35px rgba(15, 23, 42, 0.06);">
+                <div class="text-center" style="margin-bottom: 35px;">
+                    <span class="poweraim-badge">PROJECT INQUIRY</span>
+                    <h2 class="section-title" style="font-size: 32px; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Request an Engineering Quote</h2>
+                    <p style="color: #64748b; font-size: 15px; margin: 0;">Submit your project parameters and our senior consulting engineers will prepare a comprehensive proposal.</p>
+                </div>
 
-            <div class="poweraim-grid grid-2">
-
-                <div class="contact-info-panel">
-
-                    <span class="section-subtitle">GET IN TOUCH</span>
-
-                    <h2 class="section-title">Head Office</h2>
-
-                    <div class="info-list">
-
-                        <div class="info-item">
-
-                            <i class="fa-solid fa-location-dot"></i>
-
-                            <div>
-
-                                <h4>Address</h4>
-
-                                <p>15-F Block C1, Civic Center, Faisal Town, Lahore, Pakistan</p>
-
-                            </div>
-
+                <form id="poweraim-quote-form" method="post" action="#" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group" style="margin: 0;">
+                            <label for="q-name" style="font-weight: 700; font-size: 14px; color: #0f172a; margin-bottom: 6px; display: block;">Full Name</label>
+                            <input type="text" id="q-name" name="q-name" required placeholder="Your Full Name" style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
                         </div>
 
-                        <div class="info-item">
-
-                            <i class="fa-solid fa-phone"></i>
-
-                            <div>
-
-                                <h4>Phone / Fax / Mobile</h4>
-
-                                <p>+92-42-35195798<br>+92-333-4866709<br>+92-333-5332529</p>
-
-                            </div>
-
+                        <div class="form-group" style="margin: 0;">
+                            <label for="q-company" style="font-weight: 700; font-size: 14px; color: #0f172a; margin-bottom: 6px; display: block;">Company / Organization Name</label>
+                            <input type="text" id="q-company" name="q-company" placeholder="Company or Organization Name" style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
                         </div>
-
-                        <div class="info-item">
-
-                            <i class="fa-solid fa-envelope"></i>
-
-                            <div>
-
-                                <h4>Emails</h4>
-
-                                <p>info@poweraim.com.pk<br>poweraimengineering@gmail.com</p>
-
-                            </div>
-
-                        </div>
-
                     </div>
 
-                </div>
-
-                <div class="contact-form-panel">
-
-                    <h3>Request an Engineering Quote</h3>
-
-                    <form id="poweraim-quote-form" method="post" action="#">
-
-                        <div class="form-group">
-
-                            <label for="q-name">Full Name</label>
-
-                            <input type="text" id="q-name" name="q-name" required placeholder="John Doe">
-
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group" style="margin: 0;">
+                            <label for="q-email" style="font-weight: 700; font-size: 14px; color: #0f172a; margin-bottom: 6px; display: block;">Email Address</label>
+                            <input type="email" id="q-email" name="q-email" required placeholder="email@company.com" style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
                         </div>
 
-                        <div class="form-group">
-
-                            <label for="q-email">Email Address</label>
-
-                            <input type="email" id="q-email" name="q-email" required placeholder="email@company.com">
-
+                        <div class="form-group" style="margin: 0;">
+                            <label for="q-phone" style="font-weight: 700; font-size: 14px; color: #0f172a; margin-bottom: 6px; display: block;">Phone / Mobile Number</label>
+                            <input type="tel" id="q-phone" name="q-phone" placeholder="+92-333-xxxxxxx" style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
                         </div>
+                    </div>
 
-                        <div class="form-group">
+                    <div class="form-group" style="margin: 0;">
+                        <label for="q-msg" style="font-weight: 700; font-size: 14px; color: #0f172a; margin-bottom: 6px; display: block;">Project Description</label>
+                        <textarea id="q-msg" name="q-msg" rows="4" required placeholder="Describe your project requirement, scope, location, and timeline..." style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; resize: vertical; box-sizing: border-box;"></textarea>
+                    </div>
 
-                            <label for="q-msg">Project Description</label>
+                    <button type="submit" class="poweraim-btn btn-primary btn-block" style="padding: 14px; font-size: 15px; font-weight: 700; border-radius: 8px; margin-top: 6px; cursor: pointer;">Submit Inquiry <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
 
-                            <textarea id="q-msg" name="q-msg" rows="4" required placeholder="Describe your project requirement..."></textarea>
+                <div id="form-feedback" class="form-feedback"></div>
+            </div>
+        </div>
+    </section>
 
-                        </div>
-
-                        <button type="submit" class="poweraim-btn btn-primary btn-block">Submit Inquiry</button>
-
-                    </form>
-
-                    <div id="form-feedback" class="form-feedback"></div>
-
-                </div>
-
+    <!-- Head Office & Direct Contacts Section -->
+    <section class="poweraim-contact-section" style="padding: 80px 0 90px; background: #0f172a; color: #ffffff;">
+        <div class="poweraim-container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <span class="poweraim-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">GET IN TOUCH</span>
+                <h2 class="section-title" style="color: #ffffff; font-size: 34px; font-weight: 800; margin-bottom: 8px;">Head Office</h2>
+                <p style="color: #94a3b8; font-size: 15px; margin: 0;">Power Aim Engineering Services Pvt. Ltd</p>
             </div>
 
-        </div>
+            <div class="poweraim-grid grid-3" style="gap: 25px;">
+                <!-- Location Card -->
+                <div class="contact-info-card" style="background: #1e293b; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: #0284c7; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 20px; box-shadow: 0 6px 16px rgba(2, 132, 199, 0.4);">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p style="color: #f1f5f9; font-size: 15px; line-height: 1.6; margin: 0; font-weight: 500;">
+                        15-F Block C1, Civic Center, Faisal Town, Lahore, Pakistan
+                    </p>
+                </div>
 
+                <!-- Phone Numbers Card -->
+                <div class="contact-info-card" style="background: #1e293b; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: #0284c7; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 20px; box-shadow: 0 6px 16px rgba(2, 132, 199, 0.4);">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p style="color: #f1f5f9; font-size: 15px; line-height: 1.8; margin: 0; font-weight: 500;">
+                        +92-42-35195798<br>
+                        +92-333-4866709<br>
+                        +92-333-5332529
+                    </p>
+                </div>
+
+                <!-- Emails Card -->
+                <div class="contact-info-card" style="background: #1e293b; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: #0284c7; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 20px; box-shadow: 0 6px 16px rgba(2, 132, 199, 0.4);">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p style="color: #f1f5f9; font-size: 15px; line-height: 1.8; margin: 0; font-weight: 500;">
+                        <a href="mailto:info@poweraim.com.pk" style="color: #38bdf8; text-decoration: none; font-weight: 600;">info@poweraim.com.pk</a><br>
+                        <a href="mailto:poweraimengineering@gmail.com" style="color: #38bdf8; text-decoration: none; font-weight: 600;">poweraimengineering@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
 
