@@ -3140,3 +3140,275 @@ body {
 .service-stage-zoom-badge {
     display: none !important;
 }
+
+
+/* NESPAK-STYLE IMAGE SECTOR CARDS */
+.services-cards-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 26px !important;
+    margin-bottom: 70px !important;
+}
+
+.service-nav-card {
+    height: 320px !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    cursor: pointer !important;
+    border: 3px solid transparent !important;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12) !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    padding: 0 !important;
+    background-color: #0f172a !important;
+}
+
+.service-card-bg-img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    z-index: 1 !important;
+}
+
+.service-card-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.85) 100%) !important;
+    z-index: 2 !important;
+    transition: background 0.3s ease !important;
+}
+
+.service-card-bottom-badge {
+    position: absolute !important;
+    bottom: 18px !important;
+    left: 18px !important;
+    right: 18px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    padding: 16px 18px !important;
+    border-radius: 14px !important;
+    z-index: 3 !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+.service-badge-num {
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    color: #0284c7 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 4px !important;
+    display: block !important;
+}
+
+.service-card-bottom-badge h4 {
+    font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+    font-size: 16.5px !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+}
+
+/* Hover & Active States */
+.service-nav-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 18px 40px rgba(2, 132, 199, 0.25) !important;
+    border-color: #38bdf8 !important;
+}
+
+.service-nav-card:hover .service-card-bg-img {
+    transform: scale(1.08) !important;
+}
+
+.service-nav-card.active {
+    border-color: #0284c7 !important;
+    box-shadow: 0 18px 45px rgba(2, 132, 199, 0.35) !important;
+}
+
+.service-nav-card.active .service-card-bottom-badge {
+    background: #0284c7 !important;
+    color: #ffffff !important;
+}
+
+.service-nav-card.active .service-badge-num {
+    color: #bae6fd !important;
+}
+
+.service-nav-card.active .service-card-bottom-badge h4 {
+    color: #ffffff !important;
+}
+
+@media (max-width: 991px) {
+    .services-cards-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .service-nav-card {
+        height: 280px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-cards-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* ==========================================================================
+   IMAGE-BASED SERVICES GRID CARDS (NESPAK SECTORS STYLE)
+   ========================================================================== */
+
+.services-cards-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    margin-bottom: 70px !important;
+}
+
+@media (max-width: 1100px) {
+    .services-cards-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 650px) {
+    .services-cards-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.service-nav-card-image-style {
+    position: relative !important;
+    height: 310px !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1) !important;
+    border: 3px solid transparent !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    background: #0f172a !important;
+}
+
+.service-nav-card-image-style:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 20px 45px rgba(2, 132, 199, 0.3) !important;
+    border-color: #38bdf8 !important;
+}
+
+.service-nav-card-image-style.active {
+    border-color: #0284c7 !important;
+    box-shadow: 0 20px 45px rgba(2, 132, 199, 0.38) !important;
+    transform: translateY(-4px) !important;
+}
+
+.service-card-img-wrap {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+.service-card-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.service-nav-card-image-style:hover .service-card-img-wrap img {
+    transform: scale(1.08) !important;
+}
+
+.service-card-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.35) 45%, rgba(15, 23, 42, 0.92) 100%) !important;
+    transition: background 0.3s ease !important;
+}
+
+.service-nav-card-image-style:hover .service-card-overlay {
+    background: linear-gradient(to bottom, rgba(2, 132, 199, 0.2) 0%, rgba(15, 23, 42, 0.45) 45%, rgba(15, 23, 42, 0.95) 100%) !important;
+}
+
+.service-card-number-badge {
+    position: absolute !important;
+    top: 14px !important;
+    right: 14px !important;
+    background: rgba(15, 23, 42, 0.8) !important;
+    color: #38bdf8 !important;
+    font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    padding: 4px 10px !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    z-index: 2 !important;
+}
+
+.service-card-bottom-pill {
+    position: absolute !important;
+    bottom: 14px !important;
+    left: 14px !important;
+    right: 14px !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 13px 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
+    z-index: 2 !important;
+    transition: all 0.3s ease !important;
+}
+
+.service-nav-card-image-style.active .service-card-bottom-pill,
+.service-nav-card-image-style:hover .service-card-bottom-pill {
+    background: #0284c7 !important;
+}
+
+.service-card-bottom-pill h4 {
+    font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+    font-size: 14.5px !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+    transition: color 0.3s ease !important;
+}
+
+.service-nav-card-image-style.active .service-card-bottom-pill h4,
+.service-nav-card-image-style:hover .service-card-bottom-pill h4 {
+    color: #ffffff !important;
+}
+
+.service-pill-action {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    background: #f0f9ff !important;
+    color: #0284c7 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+    flex-shrink: 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.service-nav-card-image-style.active .service-pill-action,
+.service-nav-card-image-style:hover .service-pill-action {
+    background: #ffffff !important;
+    color: #0284c7 !important;
+    transform: translateX(3px) !important;
+}
