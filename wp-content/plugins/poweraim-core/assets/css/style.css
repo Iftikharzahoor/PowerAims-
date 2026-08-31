@@ -3519,3 +3519,206 @@ html {
 .goog-te-menu-value, .goog-te-gadget {
     display: none !important;
 }
+
+
+/* ==========================================================================
+   MEGA-MENU HOVER BRIDGE & RELIABLE CLICK FIX
+   ========================================================================== */
+
+.nav-item-megamenu {
+    position: relative;
+}
+
+.poweraim-services-megamenu {
+    position: absolute;
+    top: 100%;
+    left: -160px;
+    width: 860px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2), 0 4px 14px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    margin-top: 8px;
+    display: flex;
+    gap: 28px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+    z-index: 999999 !important;
+}
+
+/* Invisible hover bridge to prevent menu from closing when mouse moves down */
+.poweraim-services-megamenu::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background: transparent;
+}
+
+.nav-item-megamenu:hover .poweraim-services-megamenu,
+.poweraim-services-megamenu:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+}
+
+.megamenu-links-grid li a {
+    cursor: pointer !important;
+    user-select: none;
+}
+
+/* ==========================================================================
+   SERVICES SECTOR GRID & FULL DETAIL SECTIONS
+   ========================================================================== */
+
+.services-main-page-wrapper {
+    padding: 50px 0 90px;
+    background: #f8fafc;
+}
+
+.services-top-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.services-top-intro h1 {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 38px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.services-top-intro p {
+    font-size: 16px;
+    color: #64748b;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Individual Full Service Showcase Block */
+.service-full-block {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    overflow: hidden;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 0;
+    scroll-margin-top: 100px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-full-block:hover {
+    box-shadow: 0 16px 45px rgba(2, 132, 199, 0.12);
+    border-color: #38bdf8;
+}
+
+.service-block-left {
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-block-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(2, 132, 199, 0.1);
+    color: #0284c7;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    align-self: flex-start;
+}
+
+.service-block-title {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 26px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.35;
+    margin-bottom: 16px;
+}
+
+.service-block-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 22px;
+}
+
+.service-block-deliverables {
+    margin: 0 0 26px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-block-deliverables li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #334155;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.service-block-deliverables li i {
+    color: #0284c7;
+    font-size: 14px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.service-block-right {
+    background: #f8fafc;
+    border-left: 1px solid #f1f5f9;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.service-block-right img {
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.service-full-block:hover .service-block-right img {
+    transform: scale(1.02);
+}
+
+@media (max-width: 991px) {
+    .service-full-block {
+        grid-template-columns: 1fr;
+    }
+    .service-block-right {
+        border-left: none;
+        border-top: 1px solid #f1f5f9;
+        min-height: 340px;
+    }
+}
