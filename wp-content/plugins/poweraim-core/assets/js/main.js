@@ -31,6 +31,20 @@ jQuery(document).ready(function($) {
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
 
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
+
 });
 
     // 2. Projects Section: Filtering
@@ -66,6 +80,20 @@ jQuery(document).ready(function($) {
         });
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
+
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
 
 });
 
@@ -131,6 +159,20 @@ jQuery(document).ready(function($) {
         });
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
+
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
 
 });
 
@@ -204,6 +246,20 @@ jQuery(document).ready(function($) {
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
 
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
+
 });
 
     $(document).on('click', function(e) {
@@ -229,6 +285,20 @@ jQuery(document).ready(function($) {
         });
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
+
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
 
 });
 
@@ -263,6 +333,20 @@ jQuery(document).ready(function($) {
         });
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
+
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
 
 });
 
@@ -316,6 +400,20 @@ jQuery(document).ready(function($) {
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
 
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
+
 });
 
     // 6. Mobile Navbar Toggle
@@ -340,6 +438,20 @@ jQuery(document).ready(function($) {
         });
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
+
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
 
 });
 
@@ -375,6 +487,20 @@ jQuery(document).ready(function($) {
         });
         gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
     }
+
+
+    // Handle Mega-Menu Service Link Click
+    $(document).on('click', '.poweraim-services-megamenu a', function(e) {
+        var href = $(this).attr('href');
+        if (href && href.indexOf('#service-') !== -1) {
+            var targetId = href.split('#')[1];
+            if (typeof selectService === 'function') {
+                e.preventDefault();
+                selectService(targetId, true);
+                window.location.hash = targetId;
+            }
+        }
+    });
 
 });
 
