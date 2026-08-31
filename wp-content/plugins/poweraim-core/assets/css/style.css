@@ -4096,3 +4096,43 @@ a.btn-standalone-outline-blue:hover {
     color: #ffffff !important;
     transform: translateY(-2px) !important;
 }
+
+
+/* ==========================================================================
+   FORCE SOLID BLUE BACKGROUND ON ALL STANDALONE PAGE BUTTONS
+   ========================================================================== */
+
+.btn-standalone-blue,
+a.btn-standalone-blue,
+a.btn-standalone,
+.project-scroll-card a[href*="detail.html"],
+.project-drawer-left a[href*="detail.html"],
+.service-viewer-body a[href*="contact"],
+.service-block-left a[href*="contact"] {
+    background: #0284c7 !important;
+    background-color: #0284c7 !important;
+    color: #ffffff !important;
+    border: 1px solid #0284c7 !important;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28) !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+}
+
+.btn-standalone-blue:hover,
+a.btn-standalone-blue:hover,
+a.btn-standalone:hover,
+.project-scroll-card a[href*="detail.html"]:hover,
+.project-drawer-left a[href*="detail.html"]:hover {
+    background: #0369a1 !important;
+    background-color: #0369a1 !important;
+    border-color: #0369a1 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 22px rgba(2, 132, 199, 0.38) !important;
+}
+
+.btn-standalone-blue i,
+a.btn-standalone-blue i,
+a.btn-standalone i {
+    color: #ffffff !important;
+}
