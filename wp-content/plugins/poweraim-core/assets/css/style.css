@@ -4042,3 +4042,57 @@ html {
 .btn-category-toggle {
     display: none !important;
 }
+
+
+/* ==========================================================================
+   BLUE BUTTON STYLES FOR PROJECTS & SERVICES
+   ========================================================================== */
+
+.btn-standalone-blue,
+a.btn-standalone-blue {
+    background: #0284c7 !important;
+    color: #ffffff !important;
+    border: 1px solid #0284c7 !important;
+    padding: 10px 20px !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25) !important;
+}
+
+.btn-standalone-blue:hover,
+a.btn-standalone-blue:hover {
+    background: #0369a1 !important;
+    border-color: #0369a1 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.35) !important;
+}
+
+.btn-standalone-outline-blue,
+a.btn-standalone-outline-blue {
+    background: #e0f2fe !important;
+    color: #0369a1 !important;
+    border: 1.5px solid #0284c7 !important;
+    padding: 10px 20px !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+}
+
+.btn-standalone-outline-blue:hover,
+a.btn-standalone-outline-blue:hover {
+    background: #0284c7 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}
