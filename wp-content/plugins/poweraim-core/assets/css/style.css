@@ -3471,3 +3471,51 @@ body {
     text-transform: uppercase !important;
     margin-top: 2px !important;
 }
+
+
+/* ==========================================================================
+   PERMANENTLY HIDE GOOGLE TRANSLATE BANNER, TOOLTIPS, AND POPUPS
+   ========================================================================== */
+
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame,
+iframe.skiptranslate,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-te-spinner-pos,
+#goog-gt-voting,
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    border: none !important;
+    z-index: -999999 !important;
+    pointer-events: none !important;
+}
+
+body {
+    top: 0px !important;
+    position: static !important;
+}
+
+html {
+    top: 0px !important;
+}
+
+.goog-tooltip, .goog-tooltip:hover {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.goog-te-menu-value, .goog-te-gadget {
+    display: none !important;
+}

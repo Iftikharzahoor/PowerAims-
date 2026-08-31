@@ -11,7 +11,27 @@ jQuery(document).ready(function($) {
         // Update active class on contents
         $('.tab-content').removeClass('active');
         $('#' + targetTab).addClass('active');
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     // 2. Projects Section: Filtering
     $('.filter-btn').on('click', function() {
@@ -27,7 +47,27 @@ jQuery(document).ready(function($) {
             $('.project-item').hide();
             $('.project-item[data-category="' + filterVal + '"]').show(300);
         }
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     // 3. Stats Section: Counter Animation
     var animateCounters = function() {
@@ -72,7 +112,27 @@ jQuery(document).ready(function($) {
             feedback.addClass('success').text('Thank you! Your engineering inquiry has been submitted successfully. We will get back to you shortly.');
             $('#poweraim-quote-form')[0].reset();
         }, 1500);
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     // 5. Language Switcher Dropdown & Translation Engine
     var $langSwitcher = $('#poweraimLangSwitcher');
@@ -124,13 +184,53 @@ jQuery(document).ready(function($) {
         if ($langSwitcher.hasClass('open')) {
             $langSearchInput.val('').trigger('input').focus();
         }
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     $(document).on('click', function(e) {
         if (!$(e.target).closest('#poweraimLangSwitcher').length) {
             $langSwitcher.removeClass('open');
         }
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     // Language Search Filter
     $langSearchInput.on('input', function() {
@@ -144,7 +244,27 @@ jQuery(document).ready(function($) {
                 $(this).hide();
             }
         });
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     // Language Selection Click & Instant Translation
     $(document).on('click', '.lang-item', function(e) {
@@ -176,12 +296,52 @@ jQuery(document).ready(function($) {
                 location.reload();
             }
         }
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     // 6. Mobile Navbar Toggle
     $('#poweraimMobileToggle').on('click', function() {
         $('.poweraim-nav-menu').toggleClass('open');
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
     // 7. Projects Page Category "Learn More" Expand Toggle
     $(document).on('click', '.btn-category-toggle', function(e) {
@@ -196,6 +356,26 @@ jQuery(document).ready(function($) {
             $(this).find('.toggle-text').text('Learn More');
             $(this).attr('aria-expanded', 'false');
         }
-    });
+    
+    // Prevent Google Translate top banner frame from pushing down body
+    if (window.MutationObserver) {
+        var gtObserver = new MutationObserver(function() {
+            if (document.body && document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+            if (document.documentElement && document.documentElement.style.top && document.documentElement.style.top !== '0px') {
+                document.documentElement.style.top = '0px';
+            }
+            var bannerFrames = document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, iframe.skiptranslate');
+            for (var i = 0; i < bannerFrames.length; i++) {
+                bannerFrames[i].style.display = 'none';
+                bannerFrames[i].style.height = '0px';
+                bannerFrames[i].style.visibility = 'hidden';
+            }
+        });
+        gtObserver.observe(document.documentElement, { attributes: true, childList: true, subtree: true });
+    }
+
+});
 
 });
