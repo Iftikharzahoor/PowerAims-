@@ -268,20 +268,20 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
 	        
 
         <!-- Interactive Showcase Section (Left Info + Right Large HD Image) -->
-        <div class="services-main-page-wrapper">
+            <div class="services-main-page-wrapper">
         <div class="poweraim-container">
             
             <!-- Top Intro Header -->
             <div class="services-top-intro">
                 <span class="poweraim-badge">POWER-AIM CAPABILITIES</span>
                 <h1>Explore Engineering Sectors</h1>
-                <p>Multi-disciplinary engineering consultancy delivering sustainable excellence across the complete project lifecycle. Click any sector below to view its complete scope and technical specifications.</p>
+                <p>Multi-disciplinary engineering consultancy delivering sustainable excellence across the complete project lifecycle. Click any sector below to view its complete scope, technical deliverables, and high-definition infographics.</p>
             </div>
 
             <!-- Main Top Image Cards Grid (10 Sectors) -->
-            <div class="services-cards-grid" style="margin-bottom: 80px;">
+            <div class="services-cards-grid">
                 
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-master-planning')">
+                <div class="service-nav-card-image-style" id="card-service-master-planning" onclick="openServiceDetail('service-master-planning', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/service_master_planning.png" alt="Master Planning, Appraisals, Pre-feasibility, Feasibility Studies & Detailed Design" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -292,7 +292,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-water-resources')">
+                <div class="service-nav-card-image-style" id="card-service-water-resources" onclick="openServiceDetail('service-water-resources', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/service_water_resources.jpg" alt="Water Resources Engineering" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -303,7 +303,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-wastewater')">
+                <div class="service-nav-card-image-style" id="card-service-wastewater" onclick="openServiceDetail('service-wastewater', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/service_wastewater.png" alt="Water and Waste Water Engineering" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -314,7 +314,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-roads')">
+                <div class="service-nav-card-image-style" id="card-service-roads" onclick="openServiceDetail('service-roads', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/tanawal_interchange.png" alt="Highway, Road and Infrastructure" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -325,7 +325,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-buildings')">
+                <div class="service-nav-card-image-style" id="card-service-buildings" onclick="openServiceDetail('service-buildings', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/hec_regional_centre_quetta.png" alt="Architecture and Building Design" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -336,7 +336,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-gis')">
+                <div class="service-nav-card-image-style" id="card-service-gis" onclick="openServiceDetail('service-gis', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/rawal_dam_lulc.png" alt="GIS Studies, Surveys and Investigations" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -347,7 +347,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-electrical')">
+                <div class="service-nav-card-image-style" id="card-service-electrical" onclick="openServiceDetail('service-electrical', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/gurdwara_dera_sahib_electrical.png" alt="Electrical Engineering" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -358,7 +358,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-renewable')">
+                <div class="service-nav-card-image-style" id="card-service-renewable" onclick="openServiceDetail('service-renewable', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/mooi_plaats_solar_plant.jpg" alt="Renewable Energy" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -369,7 +369,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-pm')">
+                <div class="service-nav-card-image-style" id="card-service-pm" onclick="openServiceDetail('service-pm', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/goronyo_1.jpg" alt="Project Management, Construction Management & Supervision" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -380,7 +380,7 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                         <div class="service-pill-action"><i class="fa-solid fa-arrow-right"></i></div>
                     </div>
                 </div>
-                <div class="service-nav-card-image-style" onclick="scrollToService('service-environmental')">
+                <div class="service-nav-card-image-style" id="card-service-environmental" onclick="openServiceDetail('service-environmental', true)">
                     <div class="service-card-img-wrap">
                         <img src="../wp-content/plugins/poweraim-core/assets/images/renewable_energy_roadmap_punjab.jpg" alt="Environmental and Socio-Economic Studies" loading="lazy" decoding="async">
                         <div class="service-card-overlay"></div>
@@ -393,251 +393,116 @@ class="post-119 page type-page status-publish ast-article-single" id="post-119" 
                 </div>
             </div>
 
-            <!-- Comprehensive 10 Services Detailed Blocks -->
-            <div class="services-detail-sections-wrap">
-                
-            <!-- Service 01: Master Planning & Detailed Design -->
-            <div class="service-full-block" id="service-master-planning">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-compass-drafting"></i> PROJECT LIFECYCLE STAGE 1-5</span>
-                    <h2 class="service-block-title">Master Planning, Appraisals, Pre-feasibility, Feasibility Studies & Detailed Design</h2>
-                    <p class="service-block-desc">Complete master planning, techno-economic feasibility studies, and detailed engineering design. We guide projects from strategic visioning and site appraisals to bankable financial modeling and EPC-grade construction drawings.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Reconnaissance Studies & Strategic Master Planning</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Site Appraisals, Market Assessment & Baseline Investigations</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Pre-Feasibility Options, Viability & Cost Estimations</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Comprehensive Feasibility Studies, Financial Models & ROI Analysis</span></li><li><i class="fa-solid fa-circle-check"></i> <span>EPC Detailed Engineering Design, BIM Modeling & Construction Specifications</span></li>
-                    </ul>
+            <!-- Dynamic Detail Viewer (Opens smoothly when any card is clicked) -->
+            <div id="serviceDetailViewer" class="service-detail-viewer">
+                <button type="button" class="service-viewer-close-btn" onclick="closeServiceDetail()" aria-label="Close Details">
+                    <i class="fa-solid fa-xmark"></i> Close Details
+                </button>
 
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                <div class="service-viewer-body">
+                    <!-- Left Side: Scope & Deliverables -->
+                    <div class="service-block-left">
+                        <span class="service-block-tag" id="viewerTag"><i class="fa-solid fa-layer-group"></i> ENGINEERING DISCIPLINE</span>
+                        <h2 class="service-block-title" id="viewerTitle">Service Title</h2>
+                        <p class="service-block-desc" id="viewerDesc">Service detailed description will appear here...</p>
+                        
+                        <h4 style="font-family: var(--font-heading, 'Outfit', sans-serif); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
+                        <ul class="service-block-deliverables" id="viewerDeliverables">
+                        </ul>
+
+                        <div style="margin-top: 14px;">
+                            <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Complete HD Graphic / Image -->
+                    <div class="service-block-right">
+                        <img id="viewerImage" src="" alt="Service Specification Graphic" decoding="async">
                     </div>
                 </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/service_master_planning.png" alt="Master Planning, Appraisals, Pre-feasibility, Feasibility Studies & Detailed Design" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 02: Water Resources Engineering -->
-            <div class="service-full-block" id="service-water-resources">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-water"></i> DAMS, HYDROPOWER & IRRIGATION</span>
-                    <h2 class="service-block-title">Water Resources Engineering</h2>
-                    <p class="service-block-desc">Pioneering engineering solutions for sustainable water resource management, mega hydropower generation, dam safety monitoring, and multi-tier irrigation barrages and canal systems across national and international territories.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Hydro-Power Generation Planning & Dam Engineering</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Storage Dams, Weirs, Spillways & Diversion Structures</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Irrigation Canal Networks, Headworks & Barrages</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Pumped Storage Hydropower Schemes & Reservoir Diagnostics</span></li><li><i class="fa-solid fa-circle-check"></i> <span>River Training, Flood Hazard Protection & Watershed Management</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/service_water_resources.jpg" alt="Water Resources Engineering" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 03: Water & Waste Water Engineering -->
-            <div class="service-full-block" id="service-wastewater">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-faucet-drip"></i> THE WATER CYCLE & URBAN UTILITIES</span>
-                    <h2 class="service-block-title">Water and Waste Water Engineering</h2>
-                    <p class="service-block-desc">State-of-the-art water supply, sewer network design, and advanced wastewater treatment plants. Delivering clean potable water to urban communities while safeguarding the ecosystem through cutting-edge reclamation processes.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Water Treatment Plants (Coagulation, Filtration, UV Disinfection)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Municipal Water Distribution Networks & Elevated Storage Tanks</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Deep Trunk Sewerage & Stormwater Tunnels via Trenchless Technology</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Wastewater Treatment Plants (Preliminary, Primary, Secondary & Tertiary)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Water Reclamation for Industrial Reuse, Irrigation & Natural Ecosystems</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/service_wastewater.png" alt="Water and Waste Water Engineering" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 04: Highway, Road & Infrastructure -->
-            <div class="service-full-block" id="service-roads">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-road"></i> TRANSPORTATION & CONNECTIVITY</span>
-                    <h2 class="service-block-title">Highway, Road and Infrastructure</h2>
-                    <p class="service-block-desc">Engineering modern expressways, motorways, smart urban corridors, and strategic bridges that unlock regional trade and streamline mass mobility.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Techno-Economic Feasibility & Route Alignment Studies</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Preliminary and Detailed Geometric Highway & Interchange Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Pavement Condition Evaluation, Structural Analysis & Design Review</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Traffic Volume Capacity Modeling & Intelligent Transport Systems (ITS)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Rural, Inter-District & Metropolitan Master Transportation Planning</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/tanawal_interchange.png" alt="Highway, Road and Infrastructure" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 05: Architecture & Building Design -->
-            <div class="service-full-block" id="service-buildings">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-building"></i> STRUCTURAL & ARCHITECTURAL EXCELLENCE</span>
-                    <h2 class="service-block-title">Architecture and Building Design</h2>
-                    <p class="service-block-desc">Iconic, sustainable architectural and structural engineering for institutional headquarters, commercial civic centers, industrial complexes, and modern healthcare facilities.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Corporate Headquarters, Administrative & Institutional Buildings</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Regional Healthcare Centers & Specialized Educational Campuses</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Industrial Hangars, Modern Workshops & Smart Warehouses</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Commercial Banking Hubs & High-End Mixed-Use Developments</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Structural Seismic Retrofitting, Renovation & Modern Energy Retrofits</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/hec_regional_centre_quetta.png" alt="Architecture and Building Design" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 06: GIS Studies & Investigations -->
-            <div class="service-full-block" id="service-gis">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-map-location-dot"></i> GEOSPATIAL & SUB-SURFACE INTELLIGENCE</span>
-                    <h2 class="service-block-title">GIS Studies, Surveys and Investigations</h2>
-                    <p class="service-block-desc">Advanced drone photogrammetry, satellite GIS spatial analytics, deep geotechnical drilling, and geohazard risk mapping to provide precise baseline data for mega infrastructure.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>High-Precision Topographic, Geodetic & LiDAR Drone Surveys</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Geographical Information System (GIS) Spatial Modeling & Land Use Mapping</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Geotechnical Subsurface Drilling, Soil Mechanics & Laboratory Testing</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Hydrological Modeling, Bathymetric Surveys & Geohazard Risk Assessment</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Socio-Economic, Demographic & Traffic Volume Field Surveys</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/rawal_dam_lulc.png" alt="GIS Studies, Surveys and Investigations" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 07: Electrical Engineering -->
-            <div class="service-full-block" id="service-electrical">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-bolt"></i> POWER TRANSMISSION & DISTRIBUTION</span>
-                    <h2 class="service-block-title">Electrical Engineering</h2>
-                    <p class="service-block-desc">Comprehensive power sector consultancy including high-voltage substation design, transmission line loss reduction studies, grid interconnection modeling, and SCADA automation.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Grid Interconnection Studies & Power Evacuation Optimization</span></li><li><i class="fa-solid fa-circle-check"></i> <span>HT / LT Electrical Distribution Network Planning & Digital Mapping</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Transmission Line Technical Loss Minimization & Harmonic Studies</span></li><li><i class="fa-solid fa-circle-check"></i> <span>High-Voltage (500kV/220kV/132kV) Grid Station Engineering Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Industrial Power Substations, Switchgear & SCADA Automation</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg" alt="Electrical Engineering" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 08: Renewable Energy -->
-            <div class="service-full-block" id="service-renewable">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-solar-panel"></i> CLEAN ENERGY & DECARBONIZATION</span>
-                    <h2 class="service-block-title">Renewable Energy</h2>
-                    <p class="service-block-desc">Catalyzing the green energy transition through bankable solar PV feasibility studies, wind resource diagnostics, battery energy storage (BESS), and regional clean energy roadmaps.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>National & Provincial Clean Energy Strategy & Policy Advisory</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Utility-Scale Solar PV Farm Master Planning & Detailed Engineering</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Wind Farm Yield Modeling, Micro-Siting & Resource Assessment</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Hybrid Renewable Energy Systems (Solar + Wind + BESS)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Clean Grid Integration, Carbon Offsetting & Environmental Bankability</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/mooi_plaats_solar_plant.jpg" alt="Renewable Energy" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 09: Project & Construction Management -->
-            <div class="service-full-block" id="service-pm">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-list-check"></i> QUALITY ASSURANCE & EPC SUPERVISION</span>
-                    <h2 class="service-block-title">Project Management, Construction Management & Supervision</h2>
-                    <p class="service-block-desc">Rigorous on-site construction supervision, FIDIC contract administration, quality control monitoring, and milestone scheduling ensuring projects are delivered on time, within budget, and to the highest international specifications.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>EPC / Turnkey Contract Administration & FIDIC Compliance</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Full-Time Resident Construction Supervision & Inspection</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Rigorous Quality Assurance (QA) & Quality Control (QC) Protocols</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Project Master Scheduling, Critical Path Tracking & Cost Control</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Claims Evaluation, Risk Mitigation & Testing & Commissioning Oversight</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_1.jpg" alt="Project Management, Construction Management & Supervision" loading="lazy" decoding="async">
-                </div>
-            </div>
-            <!-- Service 10: Environmental & Socio-Economic Studies -->
-            <div class="service-full-block" id="service-environmental">
-                <div class="service-block-left">
-                    <span class="service-block-tag"><i class="fa-solid fa-earth-americas"></i> SUSTAINABILITY & SOCIAL SAFEGUARDS</span>
-                    <h2 class="service-block-title">Environmental and Socio-Economic Studies</h2>
-                    <p class="service-block-desc">Comprehensive environmental impact assessments, social safeguard policies, and climate resilience modeling compliant with World Bank, ADB, and international lender criteria.</p>
-                    
-                    <h4 style="font-family: var(--font-heading); font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 12px;">Core Capabilities & Deliverables:</h4>
-                    <ul class="service-block-deliverables">
-                        <li><i class="fa-solid fa-circle-check"></i> <span>Environmental Impact Assessments (EIA) & IEE Clearance Filings</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Social Safeguard Frameworks & Resettlement Action Plans (RAP)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Climate Change Vulnerability, Adaptation & Resilience Modeling</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Occupational Health, Safety & Environmental (HSE) Compliance Audits</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Public Stakeholder Consultations & Environmental Management Plans (EMP)</span></li>
-                    </ul>
-
-                    <div style="margin-top: 10px;">
-                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 12px 26px; font-size: 14px; border-radius: 8px;">Inquire About This Service <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-block-right">
-                    <img src="../wp-content/plugins/poweraim-core/assets/images/renewable_energy_roadmap_punjab.jpg" alt="Environmental and Socio-Economic Studies" loading="lazy" decoding="async">
-                </div>
-            </div>
             </div>
 
         </div>
     </div>
 
-    <!-- Smooth Navigation Script -->
+    <!-- Dynamic Drawer Switcher Script -->
     <script>
-    function scrollToService(serviceId) {
-        var targetElem = document.getElementById(serviceId);
-        if (targetElem) {
-            targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            targetElem.style.borderColor = '#0284c7';
-            targetElem.style.boxShadow = '0 0 0 3px rgba(2, 132, 199, 0.3)';
-            setTimeout(function() {
-                targetElem.style.borderColor = '';
-                targetElem.style.boxShadow = '';
-            }, 2000);
+    const allServices = [{"id": "service-master-planning", "num": "01", "title": "Master Planning, Appraisals, Pre-feasibility, Feasibility Studies & Detailed Design", "short_title": "Master Planning & Detailed Design", "icon": "fa-solid fa-compass-drafting", "card_image": "../wp-content/plugins/poweraim-core/assets/images/service_master_planning.png", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/service_master_planning.png", "tag": "PROJECT LIFECYCLE STAGE 1-5", "desc": "Complete master planning, techno-economic feasibility studies, and detailed engineering design. We guide projects from strategic visioning and site appraisals to bankable financial modeling and EPC-grade construction drawings.", "deliverables": ["Reconnaissance Studies & Strategic Master Planning", "Site Appraisals, Market Assessment & Baseline Investigations", "Pre-Feasibility Options, Viability & Cost Estimations", "Comprehensive Feasibility Studies, Financial Models & ROI Analysis", "EPC Detailed Engineering Design, BIM Modeling & Construction Specifications"]}, {"id": "service-water-resources", "num": "02", "title": "Water Resources Engineering", "short_title": "Water Resources Engineering", "icon": "fa-solid fa-water", "card_image": "../wp-content/plugins/poweraim-core/assets/images/service_water_resources.jpg", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/service_water_resources.jpg", "tag": "DAMS, HYDROPOWER & IRRIGATION", "desc": "Pioneering engineering solutions for sustainable water resource management, mega hydropower generation, dam safety monitoring, and multi-tier irrigation barrages and canal systems across national and international territories.", "deliverables": ["Hydro-Power Generation Planning & Dam Engineering", "Storage Dams, Weirs, Spillways & Diversion Structures", "Irrigation Canal Networks, Headworks & Barrages", "Pumped Storage Hydropower Schemes & Reservoir Diagnostics", "River Training, Flood Hazard Protection & Watershed Management"]}, {"id": "service-wastewater", "num": "03", "title": "Water and Waste Water Engineering", "short_title": "Water & Waste Water Engineering", "icon": "fa-solid fa-faucet-drip", "card_image": "../wp-content/plugins/poweraim-core/assets/images/service_wastewater.png", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/service_wastewater.png", "tag": "THE WATER CYCLE & URBAN UTILITIES", "desc": "State-of-the-art water supply, sewer network design, and advanced wastewater treatment plants. Delivering clean potable water to urban communities while safeguarding the ecosystem through cutting-edge reclamation processes.", "deliverables": ["Water Treatment Plants (Coagulation, Filtration, UV Disinfection)", "Municipal Water Distribution Networks & Elevated Storage Tanks", "Deep Trunk Sewerage & Stormwater Tunnels via Trenchless Technology", "Wastewater Treatment Plants (Preliminary, Primary, Secondary & Tertiary)", "Water Reclamation for Industrial Reuse, Irrigation & Natural Ecosystems"]}, {"id": "service-roads", "num": "04", "title": "Highway, Road and Infrastructure", "short_title": "Highway, Road & Infrastructure", "icon": "fa-solid fa-road", "card_image": "../wp-content/plugins/poweraim-core/assets/images/tanawal_interchange.png", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/tanawal_interchange.png", "tag": "TRANSPORTATION & CONNECTIVITY", "desc": "Engineering modern expressways, motorways, smart urban corridors, and strategic bridges that unlock regional trade and streamline mass mobility.", "deliverables": ["Techno-Economic Feasibility & Route Alignment Studies", "Preliminary and Detailed Geometric Highway & Interchange Design", "Pavement Condition Evaluation, Structural Analysis & Design Review", "Traffic Volume Capacity Modeling & Intelligent Transport Systems (ITS)", "Rural, Inter-District & Metropolitan Master Transportation Planning"]}, {"id": "service-buildings", "num": "05", "title": "Architecture and Building Design", "short_title": "Architecture & Building Design", "icon": "fa-solid fa-building", "card_image": "../wp-content/plugins/poweraim-core/assets/images/hec_regional_centre_quetta.png", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/hec_regional_centre_quetta.png", "tag": "STRUCTURAL & ARCHITECTURAL EXCELLENCE", "desc": "Iconic, sustainable architectural and structural engineering for institutional headquarters, commercial civic centers, industrial complexes, and modern healthcare facilities.", "deliverables": ["Corporate Headquarters, Administrative & Institutional Buildings", "Regional Healthcare Centers & Specialized Educational Campuses", "Industrial Hangars, Modern Workshops & Smart Warehouses", "Commercial Banking Hubs & High-End Mixed-Use Developments", "Structural Seismic Retrofitting, Renovation & Modern Energy Retrofits"]}, {"id": "service-gis", "num": "06", "title": "GIS Studies, Surveys and Investigations", "short_title": "GIS Studies & Investigations", "icon": "fa-solid fa-map-location-dot", "card_image": "../wp-content/plugins/poweraim-core/assets/images/rawal_dam_lulc.png", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/rawal_dam_lulc.png", "tag": "GEOSPATIAL & SUB-SURFACE INTELLIGENCE", "desc": "Advanced drone photogrammetry, satellite GIS spatial analytics, deep geotechnical drilling, and geohazard risk mapping to provide precise baseline data for mega infrastructure.", "deliverables": ["High-Precision Topographic, Geodetic & LiDAR Drone Surveys", "Geographical Information System (GIS) Spatial Modeling & Land Use Mapping", "Geotechnical Subsurface Drilling, Soil Mechanics & Laboratory Testing", "Hydrological Modeling, Bathymetric Surveys & Geohazard Risk Assessment", "Socio-Economic, Demographic & Traffic Volume Field Surveys"]}, {"id": "service-electrical", "num": "07", "title": "Electrical Engineering", "short_title": "Electrical Engineering", "icon": "fa-solid fa-bolt", "card_image": "../wp-content/plugins/poweraim-core/assets/images/gurdwara_dera_sahib_electrical.png", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg", "tag": "POWER TRANSMISSION & DISTRIBUTION", "desc": "Comprehensive power sector consultancy including high-voltage substation design, transmission line loss reduction studies, grid interconnection modeling, and SCADA automation.", "deliverables": ["Grid Interconnection Studies & Power Evacuation Optimization", "HT / LT Electrical Distribution Network Planning & Digital Mapping", "Transmission Line Technical Loss Minimization & Harmonic Studies", "High-Voltage (500kV/220kV/132kV) Grid Station Engineering Design", "Industrial Power Substations, Switchgear & SCADA Automation"]}, {"id": "service-renewable", "num": "08", "title": "Renewable Energy", "short_title": "Renewable Energy", "icon": "fa-solid fa-solar-panel", "card_image": "../wp-content/plugins/poweraim-core/assets/images/mooi_plaats_solar_plant.jpg", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/mooi_plaats_solar_plant.jpg", "tag": "CLEAN ENERGY & DECARBONIZATION", "desc": "Catalyzing the green energy transition through bankable solar PV feasibility studies, wind resource diagnostics, battery energy storage (BESS), and regional clean energy roadmaps.", "deliverables": ["National & Provincial Clean Energy Strategy & Policy Advisory", "Utility-Scale Solar PV Farm Master Planning & Detailed Engineering", "Wind Farm Yield Modeling, Micro-Siting & Resource Assessment", "Hybrid Renewable Energy Systems (Solar + Wind + BESS)", "Clean Grid Integration, Carbon Offsetting & Environmental Bankability"]}, {"id": "service-pm", "num": "09", "title": "Project Management, Construction Management & Supervision", "short_title": "Project & Construction Management", "icon": "fa-solid fa-list-check", "card_image": "../wp-content/plugins/poweraim-core/assets/images/goronyo_1.jpg", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/project_slide_1.jpg", "tag": "QUALITY ASSURANCE & EPC SUPERVISION", "desc": "Rigorous on-site construction supervision, FIDIC contract administration, quality control monitoring, and milestone scheduling ensuring projects are delivered on time, within budget, and to the highest international specifications.", "deliverables": ["EPC / Turnkey Contract Administration & FIDIC Compliance", "Full-Time Resident Construction Supervision & Inspection", "Rigorous Quality Assurance (QA) & Quality Control (QC) Protocols", "Project Master Scheduling, Critical Path Tracking & Cost Control", "Claims Evaluation, Risk Mitigation & Testing & Commissioning Oversight"]}, {"id": "service-environmental", "num": "10", "title": "Environmental and Socio-Economic Studies", "short_title": "Environmental & Socio-Economic Studies", "icon": "fa-solid fa-earth-americas", "card_image": "../wp-content/plugins/poweraim-core/assets/images/renewable_energy_roadmap_punjab.jpg", "stage_image": "../wp-content/plugins/poweraim-core/assets/images/renewable_energy_roadmap_punjab.jpg", "tag": "SUSTAINABILITY & SOCIAL SAFEGUARDS", "desc": "Comprehensive environmental impact assessments, social safeguard policies, and climate resilience modeling compliant with World Bank, ADB, and international lender criteria.", "deliverables": ["Environmental Impact Assessments (EIA) & IEE Clearance Filings", "Social Safeguard Frameworks & Resettlement Action Plans (RAP)", "Climate Change Vulnerability, Adaptation & Resilience Modeling", "Occupational Health, Safety & Environmental (HSE) Compliance Audits", "Public Stakeholder Consultations & Environmental Management Plans (EMP)"]}];
+
+    function openServiceDetail(serviceId, autoScroll) {
+        const s = allServices.find(function(item) { return item.id === serviceId; });
+        if (!s) return;
+
+        // Highlight active card
+        var cards = document.querySelectorAll('.service-nav-card-image-style');
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].classList.remove('active');
+        }
+        var activeCard = document.getElementById('card-' + serviceId);
+        if (activeCard) {
+            activeCard.classList.add('active');
+        }
+
+        // Populate Viewer Data
+        var tagElem = document.getElementById('viewerTag');
+        if (tagElem) tagElem.innerHTML = '<i class="' + s.icon + '"></i> ' + s.tag;
+
+        var titleElem = document.getElementById('viewerTitle');
+        if (titleElem) titleElem.textContent = s.title;
+
+        var descElem = document.getElementById('viewerDesc');
+        if (descElem) descElem.textContent = s.desc;
+
+        var delivContainer = document.getElementById('viewerDeliverables');
+        if (delivContainer) {
+            delivContainer.innerHTML = s.deliverables.map(function(d) {
+                return '<li><i class="fa-solid fa-circle-check"></i> <span>' + d + '</span></li>';
+            }).join('');
+        }
+
+        var imgElem = document.getElementById('viewerImage');
+        if (imgElem) {
+            imgElem.src = s.stage_image;
+            imgElem.alt = s.title;
+        }
+
+        // Display the viewer
+        var viewer = document.getElementById('serviceDetailViewer');
+        if (viewer) {
+            viewer.style.display = 'block';
+            if (autoScroll) {
+                setTimeout(function() {
+                    viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 60);
+            }
+        }
+
+        window.location.hash = serviceId;
+    }
+
+    function closeServiceDetail() {
+        var viewer = document.getElementById('serviceDetailViewer');
+        if (viewer) {
+            viewer.style.display = 'none';
+        }
+        var cards = document.querySelectorAll('.service-nav-card-image-style');
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].classList.remove('active');
         }
     }
 
-    function handleInitialHash() {
+    function handleHashOnLoad() {
         var hash = window.location.hash.replace('#', '');
         if (hash && hash.startsWith('service-')) {
             setTimeout(function() {
-                scrollToService(hash);
-            }, 150);
+                openServiceDetail(hash, true);
+            }, 120);
         }
     }
 
-    window.addEventListener('DOMContentLoaded', handleInitialHash);
-    window.addEventListener('load', handleInitialHash);
-    window.addEventListener('hashchange', handleInitialHash);
+    window.addEventListener('DOMContentLoaded', handleHashOnLoad);
+    window.addEventListener('load', handleHashOnLoad);
+    window.addEventListener('hashchange', handleHashOnLoad);
     </script>
 
 
