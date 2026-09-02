@@ -86,8 +86,48 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&#038;family=Inter:wght@300;400;500;600;700&#038;display=swap' media='all' />
 <link rel='stylesheet' id='poweraim-font-awesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css?ver=6.4.0' media='all' />
 <link rel='stylesheet' id='poweraim-custom-style-css' href='../wp-content/plugins/poweraim-core/assets/css/style.css' media='all' />
-<script id="jquery-core-js" src="../wp-includes/js/jquery/jquery.min.js"></script>
-<script id="jquery-migrate-js" src="../wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script id="jquery-core-js" src="../wp-includes/js/jquery/jquery.min.js">
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
+<script id="jquery-migrate-js" src="../wp-includes/js/jquery/jquery-migrate.min.js">
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
 <link rel="https://api.w.org/" href="http://poweraims.local/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="http://poweraims.local/wp-json/wp/v2/pages/10" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://poweraims.local/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 7.0.4" />
 <link rel="canonical" href="../projects/index.html" />
@@ -126,7 +166,27 @@ body { top: 0px !important; position: static !important; }
 <body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="wp-singular page-template-default page page-id-10 wp-custom-logo wp-embed-responsive wp-theme-astra ast-desktop ast-plain-container ast-no-sidebar astra-4.13.8 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-kit-46">
 			<script>
 			(function(){if(window.matchMedia('(max-width:921.99px)').matches){document.body.classList.add('ast-header-break-point');document.body.classList.remove('ast-desktop');}})();
-			</script>
+			
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
 			
 <a
 	class="skip-link screen-reader-text"
@@ -244,8 +304,48 @@ class="hfeed site" id="page">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
 }
+
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
 </script>
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
 </header><!-- #masthead -->
 			<div id="content" class="site-content">
 		<div class="ast-container">
@@ -1547,133 +1647,1135 @@ class="post-10 page type-page status-publish ast-article-single" id="post-10" it
 
         </div>
         
-        <!-- Category: Other Services -->
+        
+        <!-- Category: Other Services & Specialized Projects -->
         <div class="project-category-block" id="cat-sub" style="padding-top: 10px; margin-bottom: 60px; display: none;">
             <div class="category-header-wrap" style="margin-bottom: 24px;">
                 <h2 class="category-title"><i class="fa-solid fa-layer-group"></i> Other Services & Specialized Projects</h2>
                 <span class="category-count-badge">21 Projects</span>
             </div>
 
-            <!-- 2-Column Split Executive Showcase matching Document -->
-            <div class="other-services-two-col-grid">
-                
-                <!-- Left Column: Surveys & Geotechnical Investigation -->
-                <div class="other-services-card">
-                    <div class="other-card-header">
-                        <div class="other-header-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-                        <div>
-                            <h3>Surveys & Geotechnical Investigation</h3>
-                            <span class="other-count-tag">12 Completed Assignments</span>
+            <!-- Sub-Category Switcher Buttons -->
+            <div class="other-services-subnav-wrap" style="margin-bottom: 35px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <button type="button" class="other-subnav-btn active" id="btn-sub-surveys" onclick="switchOtherSubTab('surveys')">
+                    <i class="fa-solid fa-compass-drafting"></i> Surveys & Geotechnical Investigation (12)
+                </button>
+                <button type="button" class="other-subnav-btn" id="btn-sub-design" onclick="switchOtherSubTab('design')">
+                    <i class="fa-solid fa-users-gear"></i> Design Projects Completed as a Sub-Consultant (09)
+                </button>
+            </div>
+
+            <!-- Sub-Category 1: Surveys & Geotechnical Investigation -->
+            <div id="sub-panel-surveys" class="other-sub-panel" style="display: block;">
+                <!-- Top Project Boxes Grid -->
+                <div class="category-projects-grid" style="margin-bottom: 50px;">
+                    
+                    <div class="project-interactive-box" id="box-survey-punjab-water" onclick="scrollToProjectItem('survey-punjab-water')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/chashma_right_bank_canal.jpg" alt="Punjab Rural Sustainable Water Supply & Sanitation – Cluster: South II" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Punjab Rural Sustainable Water Supply & Sanitation – Cluster: South II</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Govt of Punjab / World Bank</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="other-card-body">
-                        
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations of Punjab Rural Sustainable Water Supply and Sanitation Project – Cluster: South II (06 Project Sites).</p>
+                    <div class="project-interactive-box" id="box-survey-k4-grid" onclick="scrollToProjectItem('survey-k4-grid')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg" alt="Geotechnical Investigations for K-IV Grid Station near Keenjhar Lake" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigations for K-IV Grid Station near Keenjhar Lake</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Power Planner International / K-IV Project</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations for the construction of K-IV Grid Station near Keenjhar Lake, Thatta.</p>
+                    <div class="project-interactive-box" id="box-survey-sufi-city" onclick="scrollToProjectItem('survey-sufi-city')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg" alt="Geotechnical Investigations for Sufi City Housing Society" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigations for Sufi City Housing Society</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Sufi City Developers</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations for Sufi City Housing Society, Mandi Bahauddin.</p>
+                    <div class="project-interactive-box" id="box-survey-hec-quetta" onclick="scrollToProjectItem('survey-hec-quetta')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/hec_regional_centre_quetta.png" alt="Geotechnical Investigations for HEC Regional Center" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigations for HEC Regional Center</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Higher Education Commission (HEC)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical investigations for HEC regional center at Quetta.</p>
+                    <div class="project-interactive-box" id="box-survey-katas-raj" onclick="scrollToProjectItem('survey-katas-raj')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/dhar_jawa_dam.png" alt="Geotechnical Investigation & Feasibility for Dining Hall at Katas Raj" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigation & Feasibility for Dining Hall at Katas Raj</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Evacuee Trust Property Board (ETPB)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigation and Feasibility Study for Construction of Dinning Hall for Hindu Yatrees at Katas Raj.</p>
+                    <div class="project-interactive-box" id="box-survey-gb-slope-failure" onclick="scrollToProjectItem('survey-gb-slope-failure')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/gb_geohazard_risk.png" alt="Slope Failure & Soil Erosion Feasibility in Shulja, Dilkhsan & Daeen Area" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Slope Failure & Soil Erosion Feasibility in Shulja, Dilkhsan & Daeen Area</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Disaster Management Authority GB</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations for Feasibility Study of Slope Failure due to Soil Erosion in Shulja, Dilkhsan and Daeen Area of Chatokhand in Gilgit Baltistan.</p>
+                    <div class="project-interactive-box" id="box-survey-tanawal-interchange" onclick="scrollToProjectItem('survey-tanawal-interchange')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/tanawal_interchange.png" alt="Geotechnical Investigations for Tanawal Interchange on Hazara Motorway (M-15)" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigations for Tanawal Interchange on Hazara Motorway (M-15)</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> National Highway Authority (NHA)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations for Feasibility Study & Detailed Design for Construction of Tanawal Interchange on Hazara Motorway at Village Potha, District Mansehra.</p>
+                    <div class="project-interactive-box" id="box-survey-abdul-hakim-m2" onclick="scrollToProjectItem('survey-abdul-hakim-m2')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/shimshal_road_bridge.png" alt="Geotechnical Investigations for (M-2) Abdul Hakim Motorway Interchange" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigations for (M-2) Abdul Hakim Motorway Interchange</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> National Highway Authority (NHA)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations for Feasibility Study & Detailed Design for Construction of an Interchange at (M-2) Abdul Hakim Motorway at Essan, Sharaqpur district Sheikhupura, 20 km from M-2.</p>
+                    <div class="project-interactive-box" id="box-survey-jamal-din-wali-m5" onclick="scrollToProjectItem('survey-jamal-din-wali-m5')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg" alt="Geotechnical Investigations for Jamal Din Wali Interchange on Motorway (M-5)" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigations for Jamal Din Wali Interchange on Motorway (M-5)</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> National Highway Authority (NHA)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations for Feasibility Study and Detailed Design for Construction of Jamal Din Wali Interchange on Sukkhur - Multan Motorway (M-5).</p>
+                    <div class="project-interactive-box" id="box-survey-tandianwala-m3" onclick="scrollToProjectItem('survey-tandianwala-m3')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg" alt="Geotechnical Investigations for Tandianwala Interchange on Motorway (M-3)" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigations for Tandianwala Interchange on Motorway (M-3)</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> National Highway Authority (NHA)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigations for Feasibility Study & Detailed Design for Establishment of Interchange at Tandianwala Area District Faisalabad on M-3 Motorway.</p>
+                    <div class="project-interactive-box" id="box-survey-naya-pakistan-renala" onclick="scrollToProjectItem('survey-naya-pakistan-renala')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/rhq_hospital_skardu.jpg" alt="Geotechnical Investigation for Naya Pakistan Housing Scheme" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigation for Naya Pakistan Housing Scheme</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Punjab Housing & Town Planning Agency (PHATA)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigation for Naya Pakistan Housing Scheme, Renala Khurd.</p>
-                    </div>
-                    <div class="other-service-item">
-                        <div class="other-item-bullet"><i class="fa-solid fa-diamond"></i></div>
-                        <p>Geotechnical Investigation Works for Building Structures in Sundar Estates, Lahore.</p>
-                    </div>
+                    <div class="project-interactive-box" id="box-survey-sundar-estates" onclick="scrollToProjectItem('survey-sundar-estates')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg" alt="Geotechnical Investigation Works for Building Structures in Sundar Estates" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Geotechnical Investigation Works for Building Structures in Sundar Estates</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Sundar Industrial Estates / Private Clients</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Right Column: Design Projects Completed as a Sub-Consultant -->
-                <div class="other-services-card subconsultant-card">
-                    <div class="other-card-header">
-                        <div class="other-header-icon sub-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <!-- Section Divider -->
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span class="poweraim-badge" style="background: rgba(2, 132, 199, 0.08); color: #0284c7; border-color: rgba(2, 132, 199, 0.2);">SURVEYS & GEOTECHNICAL DOSSIERS</span>
+                    <h3 style="font-size: 26px; font-weight: 800; color: #0f172a; margin-top: 6px;">Detailed Case Studies & Specifications</h3>
+                    <p style="color: #64748b; font-size: 14.5px; margin: 0;">Scroll down to review full investigations, borehole testing, and geotechnical deliverables.</p>
+                </div>
+
+                <!-- Detailed Project Cards -->
+                <div class="category-all-projects-details">
+                    
+            <!-- Project Detail Card: Punjab Rural Sustainable Water Supply & Sanitation – Cluster: South II -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-punjab-water" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Punjab Rural Sustainable Water Supply & Sanitation – Cluster: South II</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
                         <div>
-                            <h3>Design Projects Completed as a Sub-Consultant</h3>
-                            <span class="other-count-tag">09 Landmark JV Projects</span>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Govt of Punjab / World Bank</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">06 Project Sites, Southern Punjab</p>
                         </div>
                     </div>
-                    <div class="other-card-body">
-                        
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">1</div>
-                        <p>Civil Design of Grid Station - Karachi Water Supply (K-4) With Power Planner International (PPI) Pvt Ltd.</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">2</div>
-                        <p>Feasibility Study of Tunnel Alignment at Right Bank Periphery Road of Diamer Basha Dam Project with Tunnel Institute of Pakistan (TIP)</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">3</div>
-                        <p>Project Detailed Engineering Design, Design Drawings, Tender Drawings of Surface and Underground Structures for 157 MW Madyan Hydropower Project with M/s. Engineering General Consultants EGC (PVT) Ltd (Subsidiary of SMEC International Pty Ltd. Lahore)</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">4</div>
-                        <p>Review of Embankment Design, Structural Analysis and Hydraulic Analysis of River Ravi Urban Development Project with M/s. Engineering General Consultants EGC (PVT) Ltd (Subsidiary of SMEC International Pty Ltd. Lahore)</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">5</div>
-                        <p>Review of Geotechnical Investigation, Soil Investigation and Construction Material Reports of Sawat Motorway Phase-III from Chakdara to Fatehpur with M/s. Engineering General Consultants EGC (PVT) Ltd (Subsidiary of SMEC International Pty Ltd. Lahore)</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">6</div>
-                        <p>Detailed Engineering Design of rock/soil cut Slopes at Left and right Abutments and Seepage Analysis of Four (04) Locations Weirs for Madyan Hydropower Project with M/s. Engineering General Consultants EGC (PVT) Ltd (Subsidiary of SMEC International Pty Ltd. Lahore)</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">7</div>
-                        <p>Land Suitability Study- Oman Agriculture Project with M/s. Engineering General Consultants EGC (PVT) Ltd (Subsidiary of SMEC International Pty Ltd. Lahore)</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">8</div>
-                        <p>Design optimization study of Foundation of Weir for 20 MW Hanzel Hydropower Project- Gilgit Baltistan with AGES Consultant Pvt Ltd.</p>
-                    </div>
-                    <div class="other-service-item sub-design-item">
-                        <div class="other-item-num">9</div>
-                        <p>Review of Power House Cut-Slopes Design and Foundation Design of Weir Area of Gabral Kalam Hydropower Project with M/s. Engineering General Consultants EGC (PVT) Ltd (Subsidiary of SMEC International Pty Ltd. Lahore)</p>
-                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Comprehensive geotechnical investigations, subsurface soil strata profiling, borehole drilling, standard penetration tests (SPT), and ground permeability analysis across 06 project sites.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>06 Regional Rural Project Sites</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Borehole Drilling & Core Logging</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Standard Penetration Testing (SPT)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Groundwater Seepage & Soil Bearing Capacity</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-punjab-water" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
                     </div>
                 </div>
 
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/chashma_right_bank_canal.jpg" alt="Punjab Rural Sustainable Water Supply & Sanitation – Cluster: South II" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigations for K-IV Grid Station near Keenjhar Lake -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-k4-grid" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigations for K-IV Grid Station near Keenjhar Lake</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Power Planner International / K-IV Project</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Keenjhar Lake, Thatta, Sindh</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Geotechnical soil testing, foundation settlement simulations, and seismic refraction profiling for heavy transformer yard and transmission structures.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Heavy Substation Foundation Analysis</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Seismic Refraction Subsurface Profiling</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Soil Resistivity & Ground Earthing Grid</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Dynamic Load & Vibration Bearing Studies</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-k4-grid" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg" alt="Geotechnical Investigations for K-IV Grid Station near Keenjhar Lake" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigations for Sufi City Housing Society -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-sufi-city" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigations for Sufi City Housing Society</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Sufi City Developers</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Mandi Bahauddin, Punjab</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Master layout geotechnical investigations, expansive clay tests, foundation depth recommendations, and pavement subgrade soil classification.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Township Master Planning Soil Survey</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Expansive Soil & Swell Potential Analysis</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Pavement Subgrade California Bearing Ratio (CBR)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Safe Bearing Capacity Recommendations</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-sufi-city" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg" alt="Geotechnical Investigations for Sufi City Housing Society" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigations for HEC Regional Center -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-hec-quetta" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigations for HEC Regional Center</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Higher Education Commission (HEC)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Quetta, Balochistan</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Subsurface exploration, high-seismic Zone 4 liquefaction potential assessment, and deep foundation design criteria for multi-story institutional complex.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Zone 4 High-Seismic Geotechnical Profiling</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Soil Liquefaction Vulnerability Analysis</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Deep Foundation & Pile Design Parameters</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Plate Load & Shear Strength Testing</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-hec-quetta" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/hec_regional_centre_quetta.png" alt="Geotechnical Investigations for HEC Regional Center" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigation & Feasibility for Dining Hall at Katas Raj -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-katas-raj" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigation & Feasibility for Dining Hall at Katas Raj</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Evacuee Trust Property Board (ETPB)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Katas Raj, Chakwal, Punjab</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Geotechnical exploration, slope stability, foundation bearing evaluation, and archaeological heritage ground preservation studies for pilgrim dining complex.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Historical Heritage Foundation Safety</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Slope Stability & Retaining Structure Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Subsurface Rock Quality & Bearing Capacity</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Comprehensive Feasibility & Soil Report</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-katas-raj" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/dhar_jawa_dam.png" alt="Geotechnical Investigation & Feasibility for Dining Hall at Katas Raj" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Slope Failure & Soil Erosion Feasibility in Shulja, Dilkhsan & Daeen Area -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-gb-slope-failure" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Slope Failure & Soil Erosion Feasibility in Shulja, Dilkhsan & Daeen Area</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Disaster Management Authority GB</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Chatokhand, Gilgit-Baltistan</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Detailed geomorphological mapping, drone photogrammetry, slope kinematic failure analysis, soil erosion tracking, and bio-engineering protection design.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>High-Altitude Slope Kinematic Modeling</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Drone Photogrammetry & LiDAR Profiling</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Debris Flow & Erosion Vulnerability Mapping</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Soil Nailing & Wire Mesh Mitigation Measures</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-gb-slope-failure" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/gb_geohazard_risk.png" alt="Slope Failure & Soil Erosion Feasibility in Shulja, Dilkhsan & Daeen Area" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigations for Tanawal Interchange on Hazara Motorway (M-15) -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-tanawal-interchange" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigations for Tanawal Interchange on Hazara Motorway (M-15)</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">National Highway Authority (NHA)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Village Potha, Mansehra, KPK</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Geotechnical soil core drilling, bridge abutment foundation testing, embankment fill stability, and pavement subgrade evaluation for trumpet interchange.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Motorway Flyover Abutment Soil Testing</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Embankment Slope Settlement Modeling</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Rock Coring & Laboratory Strength Testing</span></li><li><i class="fa-solid fa-circle-check"></i> <span>NHA Approved Detailed Geotechnical Report</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-tanawal-interchange" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/tanawal_interchange.png" alt="Geotechnical Investigations for Tanawal Interchange on Hazara Motorway (M-15)" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigations for (M-2) Abdul Hakim Motorway Interchange -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-abdul-hakim-m2" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigations for (M-2) Abdul Hakim Motorway Interchange</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">National Highway Authority (NHA)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Essan, Sharaqpur, District Sheikhupura</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Subsurface exploration, rotary borehole drilling, plate load tests, and deep foundation recommendations for motorway interchange 20 km from M-2.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>High-Speed Motorway Ramp Soil Survey</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Water Table & Seepage Depth Evaluation</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Bridge Pier Foundation Load Bearing Tests</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Detailed Pavement Structural Design Inputs</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-abdul-hakim-m2" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/shimshal_road_bridge.png" alt="Geotechnical Investigations for (M-2) Abdul Hakim Motorway Interchange" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigations for Jamal Din Wali Interchange on Motorway (M-5) -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-jamal-din-wali-m5" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigations for Jamal Din Wali Interchange on Motorway (M-5)</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">National Highway Authority (NHA)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Sukkur - Multan Motorway (M-5)</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Comprehensive geotechnical investigations, borehole drilling, laboratory triaxial testing, and bridge foundation settlement predictions for M-5 Interchange.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>M-5 Motorway Major Interchange Survey</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Triaxial Shear & Consolidation Tests</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Flyover Pier & Abutment Bearing Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Geotechnical Design Calculations Report</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-jamal-din-wali-m5" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg" alt="Geotechnical Investigations for Jamal Din Wali Interchange on Motorway (M-5)" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigations for Tandianwala Interchange on Motorway (M-3) -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-tandianwala-m3" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigations for Tandianwala Interchange on Motorway (M-3)</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">National Highway Authority (NHA)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Tandianwala, Faisalabad, Punjab</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Subsurface geotechnical investigations, SPT testing, subgrade soil classification, and culvert structural foundation assessments for M-3 Interchange.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>M-3 Motorway Interchange Expansion</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Subgrade Soil Compaction & CBR Analysis</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Cross-Drainage Culvert Bearing Capacity</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Complete NHA Technical Dossier</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-tandianwala-m3" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg" alt="Geotechnical Investigations for Tandianwala Interchange on Motorway (M-3)" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigation for Naya Pakistan Housing Scheme -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-naya-pakistan-renala" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigation for Naya Pakistan Housing Scheme</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Punjab Housing & Town Planning Agency (PHATA)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Renala Khurd, Okara, Punjab</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Geotechnical soil survey, foundation bearing capacity recommendations, seismic zonation, and chemical analysis of soil/groundwater for low-cost housing.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Low-Cost Mass Housing Soil Profiling</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Chemical Sulfate & Chloride Soil Testing</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Shallow Strip & Pad Footing Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>PHATA Approved Geotechnical Report</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-naya-pakistan-renala" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/rhq_hospital_skardu.jpg" alt="Geotechnical Investigation for Naya Pakistan Housing Scheme" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Geotechnical Investigation Works for Building Structures in Sundar Estates -->
+            <div class="service-full-block project-scroll-card" id="detail-survey-sundar-estates" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Geotechnical Investigation Works for Building Structures in Sundar Estates</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Sundar Industrial Estates / Private Clients</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Sundar Industrial Estate, Lahore</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Industrial building foundation investigations, machine vibration soil dynamics, borehole testing, and deep pile recommendations for factory complexes.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Industrial Heavy Machinery Soil Dynamics</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Deep Piling & Raft Foundation Parameters</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Consolidation Settlement Analysis</span></li><li><i class="fa-solid fa-circle-check"></i> <span>High-Load Bearing Capacity Verification</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=survey-sundar-estates" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg" alt="Geotechnical Investigation Works for Building Structures in Sundar Estates" loading="lazy" decoding="async">
+                </div>
+            </div>
+                </div>
             </div>
 
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 14px 32px; font-size: 15px; font-weight: 700; border-radius: 8px;">Inquire About Specialized Engineering Services <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+            <!-- Sub-Category 2: Design Projects as Sub-Consultant -->
+            <div id="sub-panel-design" class="other-sub-panel" style="display: none;">
+                <!-- Top Project Boxes Grid -->
+                <div class="category-projects-grid" style="margin-bottom: 50px;">
+                    
+                    <div class="project-interactive-box" id="box-sub-k4-grid" onclick="scrollToProjectItem('sub-k4-grid')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg" alt="Civil Design of Grid Station - Karachi Water Supply (K-4)" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Civil Design of Grid Station - Karachi Water Supply (K-4)</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Power Planner International (PPI) Pvt Ltd</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-diamer-tunnel" onclick="scrollToProjectItem('sub-diamer-tunnel')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_3.jpg" alt="Tunnel Alignment at Right Bank Periphery Road of Diamer Basha Dam" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Tunnel Alignment at Right Bank Periphery Road of Diamer Basha Dam</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Tunnel Institute of Pakistan (TIP)</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-madyan-hhp" onclick="scrollToProjectItem('sub-madyan-hhp')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_1.jpg" alt="157 MW Madyan Hydropower Project (SMEC JV)" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">157 MW Madyan Hydropower Project (SMEC JV)</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Engineering General Consultants (EGC) / SMEC International</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-ravi-urban" onclick="scrollToProjectItem('sub-ravi-urban')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg" alt="Embankment Design & Hydraulic Review – River Ravi Urban Development" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Embankment Design & Hydraulic Review – River Ravi Urban Development</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Engineering General Consultants (EGC) / SMEC International</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-swat-motorway" onclick="scrollToProjectItem('sub-swat-motorway')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg" alt="Review of Geotechnical & Material Reports – Swat Motorway Phase-III" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Review of Geotechnical & Material Reports – Swat Motorway Phase-III</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Engineering General Consultants (EGC) / SMEC International</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-madyan-weirs" onclick="scrollToProjectItem('sub-madyan-weirs')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/chillas_1.jpg" alt="Cut-Slopes Design & Seepage Analysis for 4 Weirs – Madyan HHP" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Cut-Slopes Design & Seepage Analysis for 4 Weirs – Madyan HHP</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Engineering General Consultants (EGC) / SMEC International</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-oman-agri" onclick="scrollToProjectItem('sub-oman-agri')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg" alt="Land Suitability Study – Oman Agriculture Project" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Land Suitability Study – Oman Agriculture Project</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Engineering General Consultants (EGC) / SMEC International</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-hanzel-hhp" onclick="scrollToProjectItem('sub-hanzel-hhp')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/deg_outfall_hydropower.png" alt="Foundation Optimization Study for 20 MW Hanzel Hydropower Project" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Foundation Optimization Study for 20 MW Hanzel Hydropower Project</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> AGES Consultant Pvt Ltd</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-interactive-box" id="box-sub-gabral-kalam" onclick="scrollToProjectItem('sub-gabral-kalam')">
+                        <div class="project-box-img-wrap">
+                            <img src="../wp-content/plugins/poweraim-core/assets/images/khanpur_dam_1.jpg" alt="Powerhouse Cut-Slopes & Weir Foundation Design – Gabral Kalam HHP" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-box-body">
+                            <div>
+                                <h5 class="project-box-title">Powerhouse Cut-Slopes & Weir Foundation Design – Gabral Kalam HHP</h5>
+                                <p class="project-box-client"><i class="fa-solid fa-building-columns"></i> Engineering General Consultants (EGC) / SMEC International</p>
+                            </div>
+                            <div class="project-box-action">
+                                <span>View Full Project Details</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Divider -->
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span class="poweraim-badge" style="background: rgba(245, 158, 11, 0.08); color: #d97706; border-color: rgba(245, 158, 11, 0.2);">SUB-CONSULTANT JV ASSIGNMENTS</span>
+                    <h3 style="font-size: 26px; font-weight: 800; color: #0f172a; margin-top: 6px;">Detailed Sub-Consultancy Case Studies</h3>
+                    <p style="color: #64748b; font-size: 14.5px; margin: 0;">Scroll down to review landmark joint-venture designs with SMEC, TIP, PPI, and AGES.</p>
+                </div>
+
+                <!-- Detailed Project Cards -->
+                <div class="category-all-projects-details">
+                    
+            <!-- Project Detail Card: Civil Design of Grid Station - Karachi Water Supply (K-4) -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-k4-grid" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Civil Design of Grid Station - Karachi Water Supply (K-4)</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Power Planner International (PPI) Pvt Ltd</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Karachi, Sindh</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Civil and structural engineering design of high-voltage electrical grid station, heavy transformer pad foundations, switchyard gantries, and control building for K-4 project.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Mega K-4 Water Supply HV Substation</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Heavy Transformer Foundation Engineering</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Seismic Resilient Control Building</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Switchyard Steel Gantries Civil Design</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-k4-grid" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/transmission_tower_losses.jpg" alt="Civil Design of Grid Station - Karachi Water Supply (K-4)" loading="lazy" decoding="async">
+                </div>
             </div>
+            <!-- Project Detail Card: Tunnel Alignment at Right Bank Periphery Road of Diamer Basha Dam -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-diamer-tunnel" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Tunnel Alignment at Right Bank Periphery Road of Diamer Basha Dam</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Tunnel Institute of Pakistan (TIP)</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Diamer Basha Dam, Gilgit-Baltistan</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Feasibility study, rock mass classification (Q & RMR systems), geological portal mapping, 3D stress modeling, and structural support system design for highway tunnel.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Mega Dam Periphery Highway Tunnel</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Rock Mass Classification (Q & RMR)</span></li><li><i class="fa-solid fa-circle-check"></i> <span>NATM Primary & Secondary Support System</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Collaboration with Tunnel Institute of Pakistan</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-diamer-tunnel" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_3.jpg" alt="Tunnel Alignment at Right Bank Periphery Road of Diamer Basha Dam" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: 157 MW Madyan Hydropower Project (SMEC JV) -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-madyan-hhp" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">157 MW Madyan Hydropower Project (SMEC JV)</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Engineering General Consultants (EGC) / SMEC International</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Swat Valley, Khyber Pakhtunkhwa</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Detailed engineering design, tender drawings of surface and underground structures, powerhouse cavern, intake tunnels, and desanding basins for 157 MW clean hydro.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>157 MW Mega Hydropower Scheme</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Underground Cavern & Headrace Tunnel Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Hydraulic Intake & Desander Structures</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Joint Venture with SMEC International</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-madyan-hhp" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_1.jpg" alt="157 MW Madyan Hydropower Project (SMEC JV)" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Embankment Design & Hydraulic Review – River Ravi Urban Development -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-ravi-urban" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Embankment Design & Hydraulic Review – River Ravi Urban Development</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Engineering General Consultants (EGC) / SMEC International</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">River Ravi, Lahore, Punjab</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Comprehensive review of river embankment design, 2D hydrodynamic numerical modeling, structural stability, flood protection bunds, and scour protection works.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>River Ravi Mega Urban Development</span></li><li><i class="fa-solid fa-circle-check"></i> <span>2D Hydrodynamic Flood Wave Simulation</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Embankment Slope Stability & Riprap Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>International SMEC Quality Peer Review</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-ravi-urban" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_2.jpg" alt="Embankment Design & Hydraulic Review – River Ravi Urban Development" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Review of Geotechnical & Material Reports – Swat Motorway Phase-III -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-swat-motorway" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Review of Geotechnical & Material Reports – Swat Motorway Phase-III</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Engineering General Consultants (EGC) / SMEC International</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Chakdara to Fatehpur, KPK</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Third-party technical review of geotechnical investigation reports, borehole logs, rock slope stability, and construction materials testing across expressway alignment.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Expressway Mountain Corridor Review</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Borehole Data & Soil Investigation Audit</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Construction Materials & Pavement Quality</span></li><li><i class="fa-solid fa-circle-check"></i> <span>SMEC JV Independent Engineering Review</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-swat-motorway" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_5.jpg" alt="Review of Geotechnical & Material Reports – Swat Motorway Phase-III" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Cut-Slopes Design & Seepage Analysis for 4 Weirs – Madyan HHP -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-madyan-weirs" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Cut-Slopes Design & Seepage Analysis for 4 Weirs – Madyan HHP</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Engineering General Consultants (EGC) / SMEC International</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Swat, Khyber Pakhtunkhwa</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Detailed engineering design of rock and soil cut slopes at left and right abutments, finite-element seepage modeling, and cut-off wall stability for 4 weir locations.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Finite Element Seepage Analysis</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Rock Cut Slopes Abutment Stabilization</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Weir Foundation Uplift & Grouting Design</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Detailed Design Drawings & Calculations</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-madyan-weirs" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/chillas_1.jpg" alt="Cut-Slopes Design & Seepage Analysis for 4 Weirs – Madyan HHP" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Land Suitability Study – Oman Agriculture Project -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-oman-agri" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Land Suitability Study – Oman Agriculture Project</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Engineering General Consultants (EGC) / SMEC International</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Sultanate of Oman</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> GIS-based land suitability classification, soil salinity mapping, arid climate water balance modeling, and agricultural development master plan.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>International Consulting in Middle East</span></li><li><i class="fa-solid fa-circle-check"></i> <span>GIS Soil Salinity & Topography Mapping</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Arid Zone Irrigation Water Assessment</span></li><li><i class="fa-solid fa-circle-check"></i> <span>SMEC International Global Assignment</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-oman-agri" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/project_slide_4.jpg" alt="Land Suitability Study – Oman Agriculture Project" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Foundation Optimization Study for 20 MW Hanzel Hydropower Project -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-hanzel-hhp" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Foundation Optimization Study for 20 MW Hanzel Hydropower Project</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">AGES Consultant Pvt Ltd</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Hanzel, Gilgit-Baltistan</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Weir foundation optimization, geotechnical bearing capacity review, seepage control through boulder-gravel deposits, and concrete foundation structural design.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>20 MW Run-of-River Hydropower</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Gravel-Boulder Foundation Seepage Control</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Weir Concrete Raft Structural Optimization</span></li><li><i class="fa-solid fa-circle-check"></i> <span>AGES Consultant Technical Collaboration</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-hanzel-hhp" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/deg_outfall_hydropower.png" alt="Foundation Optimization Study for 20 MW Hanzel Hydropower Project" loading="lazy" decoding="async">
+                </div>
+            </div>
+            <!-- Project Detail Card: Powerhouse Cut-Slopes & Weir Foundation Design – Gabral Kalam HHP -->
+            <div class="service-full-block project-scroll-card" id="detail-sub-gabral-kalam" style="margin-bottom: 50px; scroll-margin-top: 100px;">
+                <div class="service-block-left">
+                    <span class="service-block-tag"><i class="fa-solid fa-award"></i> Other Services</span>
+                    <h3 class="service-block-title" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 14px;">Powerhouse Cut-Slopes & Weir Foundation Design – Gabral Kalam HHP</h3>
+                    
+                    <div class="project-drawer-meta-grid" style="margin-bottom: 18px;">
+                        <div>
+                            <span class="meta-item-label">Client / Agency</span>
+                            <p class="meta-item-val">Engineering General Consultants (EGC) / SMEC International</p>
+                        </div>
+                        <div>
+                            <span class="meta-item-label">Location / Region</span>
+                            <p class="meta-item-val">Gabral, Kalam, Swat, KPK</p>
+                        </div>
+                    </div>
+
+                    <p class="service-block-desc" style="font-size: 14.5px; line-height: 1.7; color: #475569; margin-bottom: 18px;">
+                        <strong>Project Scope & Methodology:</strong> Review of surface powerhouse cut-slopes design, rock bolting and shotcrete stabilization, foundation design of weir area, and river diversion hydraulic review.
+                    </p>
+                    
+                    <h5 style="font-family: var(--font-heading); font-size: 13.5px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; margin: 0 0 10px;">Key Engineering Highlights:</h5>
+                    <ul class="service-block-deliverables" style="margin-bottom: 22px;">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>High-Head Mountain Hydropower</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Powerhouse Deep Cut Slope Stabilization</span></li><li><i class="fa-solid fa-circle-check"></i> <span>Weir Raft & Abutment Tie-Back Anchors</span></li><li><i class="fa-solid fa-circle-check"></i> <span>SMEC International Engineering Review</span></li>
+                    </ul>
+
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <a href="../contact/index.html" class="poweraim-btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: 8px;">Inquire About This Project <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+                        <a href="detail.html?id=sub-gabral-kalam" class="poweraim-btn btn-standalone-blue" style="background: #0284c7 !important; color: #ffffff !important; border: 1px solid #0284c7 !important; padding: 10px 22px !important; font-size: 13px !important; font-weight: 700 !important; border-radius: 8px !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;">Standalone Page <i class="fa-solid fa-up-right-from-square" style="margin-left: 6px; color: #ffffff !important;"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-block-right">
+                    <img src="../wp-content/plugins/poweraim-core/assets/images/khanpur_dam_1.jpg" alt="Powerhouse Cut-Slopes & Weir Foundation Design – Gabral Kalam HHP" loading="lazy" decoding="async">
+                </div>
+            </div>
+                </div>
+            </div>
+
         </div>
 <!-- Category Tab Filtering & Scroll Engine Script -->
     <script>
@@ -1749,7 +2851,27 @@ class="post-10 page type-page status-publish ast-article-single" id="post-10" it
     window.addEventListener('DOMContentLoaded', handleProjectHash);
     window.addEventListener('load', handleProjectHash);
     window.addEventListener('hashchange', handleProjectHash);
-    </script>
+    
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
 
 </article><!-- #post-## -->
 
@@ -1779,6 +2901,26 @@ class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemsco
 	</div><!-- #page -->
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/astra/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
 </script>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="ast-img-color-filter-2"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="1 1" /><feFuncG type="table" tableValues="1 1" /><feFuncB type="table" tableValues="1 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
 <div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both">
@@ -1813,23 +2955,163 @@ class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemsco
 						document.addEventListener( event, lazyloadRunObserver );
 					} );
 				} )();
-			</script>
+			
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
 			<script id="astra-theme-js-js-extra">
 var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"1","is_scroll_to_top":"1","is_header_footer_builder_active":"1","responsive_cart_click":"flyout","is_dark_palette":""};
 //# sourceURL=astra-theme-js-js-extra
+
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
 </script>
-<script id="astra-theme-js-js" src="../wp-content/themes/astra/assets/js/minified/frontend.min.js"></script>
-<script id="poweraim-custom-script-js" src="../wp-content/plugins/poweraim-core/assets/js/main.js"></script>
+<script id="astra-theme-js-js" src="../wp-content/themes/astra/assets/js/minified/frontend.min.js">
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
+<script id="poweraim-custom-script-js" src="../wp-content/plugins/poweraim-core/assets/js/main.js">
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
-			</script>
+			
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
+</script>
 			<script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"http://poweraims.local/wp-includes/js/wp-emoji-release.min.js?ver=7.0.4"}}
+
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
 </script>
 <script type="module">
 /*! This file is auto-generated */
 var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
 //# sourceURL=http://poweraims.local/wp-includes/js/wp-emoji-loader.min.js
+
+    function switchOtherSubTab(subKey) {
+        var btnSurveys = document.getElementById('btn-sub-surveys');
+        var btnDesign = document.getElementById('btn-sub-design');
+        var panelSurveys = document.getElementById('sub-panel-surveys');
+        var panelDesign = document.getElementById('sub-panel-design');
+
+        if (subKey === 'surveys') {
+            if (btnSurveys) btnSurveys.classList.add('active');
+            if (btnDesign) btnDesign.classList.remove('active');
+            if (panelSurveys) panelSurveys.style.display = 'block';
+            if (panelDesign) panelDesign.style.display = 'none';
+        } else {
+            if (btnDesign) btnDesign.classList.add('active');
+            if (btnSurveys) btnSurveys.classList.remove('active');
+            if (panelDesign) panelDesign.style.display = 'block';
+            if (panelSurveys) panelSurveys.style.display = 'none';
+        }
+    }
+
 </script>
 	</body>
 </html>
