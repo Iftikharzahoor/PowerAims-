@@ -4567,3 +4567,17 @@ html {
 .other-subnav-btn.active i {
     color: #ffffff !important;
 }
+
+
+/* Guarantee 3-column row for Renewable Energy boxes */
+#cat-renewable .category-projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 25px !important;
+}
+
+@media (max-width: 991px) {
+    #cat-renewable .category-projects-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
