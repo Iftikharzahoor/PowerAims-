@@ -4136,3 +4136,210 @@ a.btn-standalone-blue i,
 a.btn-standalone i {
     color: #ffffff !important;
 }
+
+
+/* ==========================================================================
+   DEFAULT 90% ZOOM & ENLARGED BLUE LOGO & HERO LARGE BADGE
+   ========================================================================== */
+
+html, body {
+    zoom: 90% !important;
+}
+
+.poweraim-logo-img {
+    height: 76px !important;
+    max-height: 76px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    background: transparent !important;
+    mix-blend-mode: multiply !important;
+    transition: transform 0.25s ease !important;
+}
+
+.poweraim-logo-img:hover {
+    transform: scale(1.05);
+}
+
+.poweraim-logo-title {
+    font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+    font-weight: 800 !important;
+    font-size: 25px !important;
+    color: #0284c7 !important; /* Brand Blue */
+    letter-spacing: -0.5px !important;
+}
+
+.poweraim-logo-sub {
+    font-size: 11.5px !important;
+    font-weight: 800 !important;
+    color: #0369a1 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+    margin-top: 2px !important;
+}
+
+/* Hero 2-Column Layout with Large Logo */
+.poweraim-hero-container {
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr !important;
+    align-items: center !important;
+    gap: 40px !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.poweraim-hero-logo-wrap {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.hero-logo-badge {
+    width: 320px !important;
+    height: 320px !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    border-radius: 50% !important;
+    padding: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45), 0 0 50px rgba(56, 189, 248, 0.4) !important;
+    border: 6px solid rgba(255, 255, 255, 0.85) !important;
+    animation: floatLogoBadge 4s ease-in-out infinite !important;
+}
+
+.hero-large-logo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+    mix-blend-mode: multiply !important;
+}
+
+@keyframes floatLogoBadge {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 991px) {
+    .poweraim-hero-container {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+    .hero-logo-badge {
+        width: 220px !important;
+        height: 220px !important;
+        padding: 20px !important;
+        margin-top: 25px !important;
+    }
+}
+
+
+/* ==========================================================================
+   DEFAULT 90% SCALING & ENHANCED LOGO / HERO STYLING
+   ========================================================================== */
+
+html {
+    zoom: 90% !important;
+}
+
+.poweraim-logo-img {
+    height: 75px !important;
+    max-height: 75px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    background: transparent !important;
+    mix-blend-mode: multiply !important;
+    transition: transform 0.25s ease !important;
+}
+
+.poweraim-logo-title {
+    font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+    font-weight: 900 !important;
+    font-size: 25px !important;
+    color: #0284c7 !important;
+    letter-spacing: -0.5px !important;
+}
+
+.poweraim-logo-sub {
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    color: #0369a1 !important;
+    letter-spacing: 1.1px !important;
+    text-transform: uppercase !important;
+    margin-top: 2px !important;
+}
+
+/* Hero Section Split Layout with Large Logo on Right */
+.poweraim-hero-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 50px !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.poweraim-hero-content {
+    flex: 1 !important;
+    max-width: 680px !important;
+}
+
+.poweraim-hero-logo-right {
+    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    padding: 20px !important;
+}
+
+.hero-big-logo {
+    width: 290px !important;
+    height: 290px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 15px 35px rgba(2, 132, 199, 0.45)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.35)) !important;
+    animation: floatHeroLogo 4s ease-in-out infinite alternate !important;
+}
+
+.hero-logo-halo {
+    position: absolute !important;
+    width: 330px !important;
+    height: 330px !important;
+    border-radius: 50% !important;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, rgba(2, 132, 199, 0.12) 50%, transparent 70%) !important;
+    z-index: -1 !important;
+    filter: blur(25px) !important;
+}
+
+@keyframes floatHeroLogo {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+@media (max-width: 991px) {
+    .poweraim-hero-container {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+    }
+    .poweraim-hero-content {
+        max-width: 100% !important;
+    }
+    .hero-big-logo {
+        width: 210px !important;
+        height: 210px !important;
+    }
+    .hero-actions {
+        justify-content: center !important;
+    }
+}
