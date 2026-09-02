@@ -4476,3 +4476,55 @@ html {
     margin: 0 !important;
     font-weight: 500 !important;
 }
+
+
+/* ==========================================================================
+   EXACT DITTO HERO LOGO (AUTHENTIC COLORS & INCREASED SIZE)
+   ========================================================================== */
+
+.poweraim-hero-logo-right {
+    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    padding: 10px !important;
+}
+
+.hero-big-logo {
+    width: 370px !important;
+    height: 370px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+    filter: none !important;
+    background: transparent !important;
+    transition: transform 0.3s ease !important;
+}
+
+.hero-big-logo:hover {
+    transform: scale(1.03) !important;
+}
+
+.hero-logo-halo {
+    display: none !important;
+}
+
+@media (max-width: 1200px) {
+    .hero-big-logo {
+        width: 310px !important;
+        height: 310px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .poweraim-hero-container {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+    }
+    .hero-big-logo {
+        width: 240px !important;
+        height: 240px !important;
+        margin: 0 auto 20px !important;
+    }
+}
