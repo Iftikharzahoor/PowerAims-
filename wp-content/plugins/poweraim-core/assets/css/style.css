@@ -4816,3 +4816,125 @@ html, body {
         left: -220px !important;
     }
 }
+
+
+/* ==========================================================================
+   PERFECTLY CENTERED SERVICES MEGA-MENU (ZERO SCREEN OVERFLOW GUARANTEED)
+   ========================================================================== */
+
+.poweraim-header-navbar {
+    position: relative !important;
+}
+
+.nav-item-megamenu {
+    position: static !important;
+}
+
+.poweraim-services-megamenu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) translateY(10px) !important;
+    width: 860px !important;
+    max-width: 92vw !important;
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.22), 0 4px 16px rgba(15, 23, 42, 0.08) !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 22px 26px !important;
+    margin-top: 6px !important;
+    display: flex !important;
+    gap: 22px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease !important;
+    pointer-events: none !important;
+    z-index: 999999 !important;
+    box-sizing: border-box !important;
+}
+
+.nav-item-megamenu:hover .poweraim-services-megamenu,
+.poweraim-services-megamenu:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(0) !important;
+    pointer-events: auto !important;
+}
+
+.poweraim-services-megamenu::before {
+    content: '' !important;
+    position: absolute !important;
+    top: -18px !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 20px !important;
+    background: transparent !important;
+}
+
+.megamenu-left-card {
+    flex: 0 0 240px !important;
+    width: 240px !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.megamenu-right-list {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+}
+
+.megamenu-heading h4 {
+    font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+    color: #c2410c !important;
+    margin: 0 0 4px !important;
+}
+
+.megamenu-links-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 4px 16px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.megamenu-links-grid li a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 7px 8px !important;
+    border-radius: 8px !important;
+    font-family: var(--font-heading, 'Outfit', sans-serif) !important;
+    font-size: 12.5px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    text-decoration: none !important;
+    white-space: normal !important;
+    line-height: 1.35 !important;
+    transition: all 0.2s ease !important;
+}
+
+.megamenu-links-grid li a:hover {
+    background: #f0f9ff !important;
+    color: #0284c7 !important;
+    transform: translateX(3px) !important;
+}
+
+@media (max-width: 991px) {
+    .poweraim-services-megamenu {
+        display: none !important;
+    }
+}
