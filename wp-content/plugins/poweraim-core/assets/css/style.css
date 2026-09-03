@@ -4581,3 +4581,22 @@ html {
         grid-template-columns: 1fr !important;
     }
 }
+
+
+/* Hero Container without right logo */
+.poweraim-hero-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.poweraim-hero-content {
+    flex: 1 !important;
+    max-width: 800px !important;
+}
+
+.poweraim-hero-logo-right {
+    display: none !important;
+}
