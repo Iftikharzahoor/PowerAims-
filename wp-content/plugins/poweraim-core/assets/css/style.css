@@ -4243,9 +4243,7 @@ html, body {
    DEFAULT 90% SCALING & ENHANCED LOGO / HERO STYLING
    ========================================================================== */
 
-html {
-    zoom: 90% !important;
-}
+
 
 .poweraim-logo-img {
     height: 75px !important;
@@ -4599,4 +4597,73 @@ html {
 
 .poweraim-hero-logo-right {
     display: none !important;
+}
+
+
+/* ==========================================================================
+   DEFAULT 110% SCALING & FULL-WIDTH NAVBAR (ZERO WASTED SIDE GAPS)
+   ========================================================================== */
+
+html {
+    zoom: 110% !important;
+}
+
+.poweraim-header-navbar {
+    width: 100% !important;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+}
+
+.poweraim-header-navbar .poweraim-header-inner,
+.poweraim-header-inner {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.poweraim-main-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 1 !important;
+    margin: 0 20px !important;
+}
+
+.poweraim-nav-menu {
+    display: flex !important;
+    align-items: center !important;
+    gap: 30px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.poweraim-nav-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    flex-shrink: 0 !important;
+}
+
+@media (max-width: 1200px) {
+    .poweraim-header-navbar .poweraim-header-inner,
+    .poweraim-header-inner {
+        padding: 0 20px !important;
+    }
+    .poweraim-nav-menu {
+        gap: 20px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .poweraim-header-navbar .poweraim-header-inner,
+    .poweraim-header-inner {
+        padding: 0 15px !important;
+    }
+    .poweraim-main-nav {
+        display: none !important;
+    }
 }
